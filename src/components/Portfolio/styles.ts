@@ -28,7 +28,7 @@ export const SlideWrapper = styled.div`
 `;
 
 export const SlideImage = styled.img`
-  max-height: 400px;
+  max-height: 100%;
   margin-bottom: 20px;
 `;
 

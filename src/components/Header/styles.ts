@@ -4,7 +4,7 @@ export const Header = styled.div`
     color: #fff;
     display: flex;
     justify-content: space-between;
-    width: 30%;
+    
     margin: 2.5em;
 `
 
@@ -26,6 +26,8 @@ export const Link_Container = styled.div`
     align-items: center;
     flex-direction: column;
     color: #fff;
+    font-size: 2em;
+    font-weight: 800;
 
     img {
         width: 30px;
