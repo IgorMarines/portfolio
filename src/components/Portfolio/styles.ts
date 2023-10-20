@@ -2,20 +2,21 @@ import styled from 'styled-components'
 
 
 export const Body = styled.div`
-    background: #000;
-    height: 100vh;
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
     color: #fff;
+    background: #000;
+    min-height: 100vh;
+    width: 100%;
 `;
 
 export const Container = styled.div`
   display: flex;
   background: #000;
-  justify-content: center;
+  min-height: 100vh;
+  justify-content: space-around;
   flex-direction: column;
 `;
 
@@ -53,7 +54,7 @@ export const SlideDescription = styled.p`
 `;
 
 export const PortfolioText = styled.p`
-    width: 80%;
+    width: 90%;
     border: 2px solid #fff;
     padding: 1.5em;
     text-align: center;

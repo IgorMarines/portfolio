@@ -4,7 +4,7 @@ export const Header = styled.div`
     color: #fff;
     display: flex;
     justify-content: space-between;
-    
+    width: 100%;
     margin: 2.5em;
 `
 
@@ -13,11 +13,12 @@ const LinkPulse = keyframes`
         transform: scale(1);
     }
     50% {
-        transform: scale(1.1);
+        transform: scale(0.8);
     }
     100% {
         transform: scale(1);
     }
+    animation: 1s ease-in;
 `;
 
 export const Link_Container = styled.div`
