@@ -5,6 +5,7 @@ import Footer from '../Footer/Footer.tsx';
 import Logotipo from '../Header/home/index.tsx';
 import { Link, useParams } from 'react-router-dom';
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const portfolio_projects = [
   {
     name: 'Estágio',
@@ -70,9 +71,9 @@ const Portfolio = () => {
 
 
               <S.SlideWrapper>
-                <a href={`https://${project.link}`}>
+                <Link to={`${index}`}>
                   <S.SlideImage src={project.image} alt={project.name} />
-                </a>
+                </Link>
                 <S.SlideText>{project.name}</S.SlideText>
                 <S.SlideDescription>{project.description}</S.SlideDescription>
               </S.SlideWrapper>
