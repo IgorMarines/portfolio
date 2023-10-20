@@ -2,6 +2,7 @@ import { Link, useParams } from 'react-router-dom';
 import { portfolio_projects } from '../Portfolio/Portfolio';
 import * as S from './styles'
 import { useMediaQuery } from '@mui/material';
+import Home from '../Header/home';
 
 const PortfolioProject = () => {
 
@@ -23,6 +24,7 @@ const PortfolioProject = () => {
 
   return (
     <S.Container>
+      <Home />
       <h1>{selectedProject.name}</h1>
       <p>{selectedProject.description}</p>
       <S.Techs style={{ flexWrap: isMobile ? 'wrap' : 'nowrap' }}>
