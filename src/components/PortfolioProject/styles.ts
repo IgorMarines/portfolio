@@ -2,13 +2,19 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
     background: #000;
+    min-height: 100vh;
     color: #fff;
     text-align: center;
     width: 100%;
-    height: 100vh;
 
     img {
         width: 100%;
+    }
+
+    pre {
+        font-size: 24px;
+        line-height: 36px;
+        
     }
 `
 

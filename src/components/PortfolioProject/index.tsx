@@ -26,7 +26,9 @@ const PortfolioProject = () => {
     <S.Container>
       <Home />
       <h1>{selectedProject.name}</h1>
-      <p>{selectedProject.description}</p>
+      <p>
+        {selectedProject.description}
+      </p>
       <S.Techs style={{ flexWrap: isMobile ? 'wrap' : 'nowrap' }}>
         {selectedProject.techs.map(tech => {
           return (
