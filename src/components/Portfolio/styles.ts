@@ -15,6 +15,7 @@ export const Body = styled.div`
 export const Container = styled.div`
   display: flex;
   background: #000;
+  width: 100%;
   min-height: 100vh;
   justify-content: space-around;
   flex-direction: column;
