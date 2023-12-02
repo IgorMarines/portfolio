@@ -70,7 +70,7 @@ const Portfolio = () => {
 
         <S.CardsContainer>
           {portfolio_projects.map((project, index) => (
-            <S.Card key={index}>
+            <S.Card key={index} className={`animate__animated animate__fadeIn animate__delay-${index}s`}>
               <Link to={`${index}`}>
                 <S.CardImage src={project.image} alt={project.name} />
               </Link>
