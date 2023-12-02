@@ -33,7 +33,7 @@ const Header = () => {
                 return (
                     <S.Link_Container>
 
-                        <a href={link.link}>
+                        <a href={`https:// + ${link.link}`}>
                             <img src={link.icon} />
                         </a>
                     </S.Link_Container>
@@ -41,7 +41,7 @@ const Header = () => {
             })}
             <div>
                 <S.Link_Container>
-                    <a style={{textDecoration: 'none', color: '#fff'}} href='/portfolio'>Works</a>
+                    <a style={{ textDecoration: 'none', color: '#fff' }} href='/portfolio'>Works</a>
                 </S.Link_Container>
             </div>
         </S.Header>

@@ -1,4 +1,4 @@
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { portfolio_projects } from '../Portfolio/Portfolio';
 import * as S from './styles'
 import { useMediaQuery } from '@mui/material';
@@ -29,16 +29,19 @@ const PortfolioProject = () => {
       <p>
         {selectedProject.description}
       </p>
-      <S.Techs style={{ flexWrap: isMobile ? 'wrap' : 'nowrap' }}>
-        {selectedProject.techs.map(tech => {
-          return (
-            <p>{tech}</p>
-          )
-        })}
-      </S.Techs>
-      <Link to={`https://${selectedProject.link}`}>
-        <img src={selectedProject.image} alt={selectedProject.name} />
-      </Link>
+      <S.Main>
+        <S.Techs style={{ flexWrap: isMobile ? 'wrap' : 'nowrap' }}>
+          {selectedProject.techs.map(tech => {
+            return (
+              <p>{tech}</p>
+            )
+          })}
+        </S.Techs>
+
+        <a href={`http://${selectedProject.link}`} target='_blank' rel='noopener noreferrer'>
+          <img src={selectedProject.image} alt={selectedProject.name} />
+        </a>
+      </S.Main>
     </S.Container>
   );
 };
