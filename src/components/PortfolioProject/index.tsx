@@ -31,9 +31,9 @@ const PortfolioProject = () => {
       </p>
       <S.Main>
         <S.Techs style={{ flexWrap: isMobile ? 'wrap' : 'nowrap' }}>
-          {selectedProject.techs.map(tech => {
+          {selectedProject.techs.map((tech, index) => {
             return (
-              <p>{tech}</p>
+              <p className={`animate__animated animate__fadeIn animate__delay-${index}s`}>{tech}</p>
             )
           })}
         </S.Techs>
