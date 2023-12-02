@@ -31,7 +31,6 @@ background: #fafafa;
 
 export const Card = styled.div`
 display: flex;
-justify-content: center;
 flex-direction: column;
 margin: 10px;
 border: solid 2px #565555;
