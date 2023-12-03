@@ -12,17 +12,17 @@ const Header = () => {
         {
             name: 'Linkedin',
             icon: LinkedinIcon,
-            link: 'https://www.linkedin.com/in/igormarines/',
+            link: 'www.linkedin.com/in/igormarines/',
         },
         {
             name: 'Github',
             icon: GithubIcon,
-            link: 'https://github.com/IgorMarines',
+            link: 'github.com/IgorMarines',
         },
         {
             name: 'Instagram',
             icon: InstagramIcon,
-            link: 'https://www.instagram.com/igor.marines/',
+            link: 'instagram.com/igor.marines/',
         },
     ]
 
@@ -33,7 +33,7 @@ const Header = () => {
                 return (
                     <S.Link_Container>
 
-                        <a href={`https:// + ${link.link}`}>
+                        <a href={`http://${link.link}`} target='_blank' rel='noopener noreferrer'>
                             <img src={link.icon} />
                         </a>
                     </S.Link_Container>
@@ -41,7 +41,7 @@ const Header = () => {
             })}
             <div>
                 <S.Link_Container>
-                    <a style={{ textDecoration: 'none', color: '#fff' }} href='/portfolio'>Works</a>
+                    <a rel='noopener noreferrer' style={{ textDecoration: 'none', color: '#fff' }} href='/portfolio'>Works</a>
                 </S.Link_Container>
             </div>
         </S.Header>
