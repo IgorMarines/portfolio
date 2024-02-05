@@ -35,6 +35,13 @@ export const portfolio_projects = [
     techs: ['HTML', 'CSS', 'JAVASCRIPT', 'VUE'],
   },
   {
+    name: 'Landing Page Cabelereiro',
+    description: 'Landing Page para barbearia',
+    link: 'https://media.discordapp.net/attachments/840680667842871306/1204042503028744203/image.png?ex=65d34af6&is=65c0d5f6&hm=cfe0140dfb5733d7135939cd007b51b472614723b4912f49b48d322929952a64&=&format=webp&quality=lossless&width=886&height=498',
+    image: 'https://media.discordapp.net/attachments/840680667842871306/1204042503028744203/image.png?ex=65d34af6&is=65c0d5f6&hm=cfe0140dfb5733d7135939cd007b51b472614723b4912f49b48d322929952a64&=&format=webp&quality=lossless&width=886&height=498',
+    techs: ['HTML', 'CSS', 'JAVASCRIPT', 'REACTJS']
+  },
+  {
     name: 'iMovi',
     description: 'Landing Page',
     link: 'igormarines.github.io/LearningBootsTrap/',
