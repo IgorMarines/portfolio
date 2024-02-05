@@ -8,13 +8,14 @@ import PortfolioProject from './components/PortfolioProject/index.tsx';
 
 import './index.css';
 
+// eslint-disable-next-line react-refresh/only-export-components
 const Root = () => (
     <BrowserRouter>
         <Routes>
             <Route path="/" element={<App />} />
             <Route path="/about" element={<About />} />
-            <Route path="/portfolio" element={<Portfolio/>} />
-            <Route path="/portfolio/:id" element={<PortfolioProject/>} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/portfolio/:id" element={<PortfolioProject />} />
         </Routes>
     </BrowserRouter>
 );
