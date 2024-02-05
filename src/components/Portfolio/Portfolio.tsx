@@ -73,10 +73,13 @@ const Portfolio = () => {
 
       <S.Container>
         <div>
-          <Logotipo />
+
         </div>
-        <div style={{ display: 'flex', justifyContent: 'space-around', width: '100%' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-around', width: '100%', backgroundColor: '#000' }}>
           <S.PortfolioText>
+            <div style={{ paddingRight: 5 }}>
+              <Logotipo />
+            </div>
             Transformando ideias em realidade por meio da paixão pela criação e da busca constante pela excelência.
           </S.PortfolioText>
         </div>
@@ -92,7 +95,7 @@ const Portfolio = () => {
               <p>{project.description}</p>
               <ul>
                 {project.techs.map((tech, index) => (
-                  <li style={{ color: project.techs.includes('REACTJS') ? '#61DAFB' : (project.techs.includes('VUE') ? '#4FC08D' : '#fff') }} key={index}>{tech}</li>
+                  <li style={{ color: project.techs.includes('REACTJS') ? '#61DAFB' : (project.techs.includes('VUE') ? '#4FC08D' : 'red') }} key={index}>{tech}</li>
                 ))}
               </ul>
             </S.Card>

@@ -111,6 +111,9 @@ background: #000;
 `;
 
 export const PortfolioText = styled.p`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 90%;
   border: 2px solid #000;
   border-radius: 15px;
@@ -118,6 +121,7 @@ export const PortfolioText = styled.p`
   text-align: center;
   margin-bottom: 5px;
   font-weight: bold;
+  color: #fff;
   box-shadow: rgb(0, 0, 0, 0.4) 0px 20px 30px -10px;
 `
 
