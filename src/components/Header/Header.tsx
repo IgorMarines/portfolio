@@ -41,7 +41,7 @@ const Header = () => {
             })}
             <div>
                 <S.Link_Container>
-                    <a rel='noopener noreferrer' style={{ textDecoration: 'none', color: '#fff' }} href='/portfolio'>Works</a>
+                    <a rel='noopener noreferrer' style={{ textDecoration: 'none', color: '#fff' }} href='/portfolio'>PROJETOS</a>
                 </S.Link_Container>
             </div>
         </S.Header>
