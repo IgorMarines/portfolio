@@ -134,3 +134,16 @@ export const SlideDescription = styled.p`
   font-weight: 700;
   background: #000;
 `;
+
+export const SelectedTech = styled.select`
+  width: 200px; /* Ajuste a largura conforme necessário */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  color: #000;
+  background-color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+`;

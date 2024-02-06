@@ -2,7 +2,8 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import * as S from './styles';
 import Footer from '../Footer/Footer.tsx';
 import Logotipo from '../Header/home/index.tsx';
-import { Link, useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const portfolio_projects = [
@@ -72,16 +73,17 @@ export const portfolio_projects = [
 ];
 
 const Portfolio = () => {
-  const params = useParams();
-  console.log(params);
+  const [selectedTech, setSelectedTech] = useState('');
+
+  const filteredProjects = portfolio_projects.filter(project =>
+    selectedTech === '' || project.techs.includes(selectedTech)
+  );
+
+  const allTechs = [...new Set(portfolio_projects.flatMap(project => project.techs))];
 
   return (
     <S.Body>
-
       <S.Container>
-        <div>
-
-        </div>
         <div style={{ display: 'flex', justifyContent: 'space-around', width: '100%', backgroundColor: '#000' }}>
           <S.PortfolioText>
             <div style={{ paddingRight: 5 }}>
@@ -91,9 +93,17 @@ const Portfolio = () => {
           </S.PortfolioText>
         </div>
 
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: 10 }}>
+          <S.SelectedTech value={selectedTech} onChange={(e) => setSelectedTech(e.target.value)}>
+            <option value="">Todos</option>
+            {allTechs.map((tech, index) => (
+              <option key={index} value={tech}>{tech}</option>
+            ))}
+          </S.SelectedTech>
+        </div>
 
         <S.CardsContainer>
-          {portfolio_projects.map((project, index) => (
+          {filteredProjects.map((project, index) => (
             <S.Card key={index} className={`animate__animated animate__fadeIn animate__delay-${index}s`}>
               <Link to={`${index}`}>
                 <S.CardImage src={project.image} alt={project.name} />

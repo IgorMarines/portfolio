@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -8,7 +9,6 @@ import PortfolioProject from './components/PortfolioProject/index.tsx';
 
 import './index.css';
 
-// eslint-disable-next-line react-refresh/only-export-components
 const Root = () => (
     <BrowserRouter>
         <Routes>
