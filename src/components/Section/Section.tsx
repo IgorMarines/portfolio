@@ -1,11 +1,14 @@
 import 'animate.css';
 import * as S from './styles'
-import ena from '../../assets/images/ena.png'
+import sukuna from '../../assets/images/sukuna2.jpg'
+import itadori from '../../assets/images/ena2.jpg'
 import { useMediaQuery } from '@mui/material';
+import { useState } from 'react';
 
 const Content = () => {
 
   const isMobile = useMediaQuery('(max-width:600px)');
+  const [userPhoto, setUserPhoto] = useState(false)
 
   return (
     <S.Body>
@@ -18,7 +21,7 @@ const Content = () => {
               <a style={{ color: '#000', display: 'block', background: '#fff', textDecoration: 'none', width: 200, borderRadius: 5, marginTop: 15, padding: '5px 5px', textAlign: 'center' }} href="https://wa.me/5511954348405" target='_blank'> Fale Comigo</a></S.Description>
           </S.Left>
           <S.Right style={{ display: isMobile ? 'none' : 'flex' }}>
-            <img className="animate__animated animate__fadeIn animate__delay-4s" src={ena} alt="" />
+            <img className="animate__animated animate__fadeIn animate__delay-4s" style={{ borderRadius: '100%' }} onClick={() => setUserPhoto(!userPhoto)} src={userPhoto ? itadori : sukuna} alt="" />
           </S.Right>
         </S.Container>
       </S.Border>
