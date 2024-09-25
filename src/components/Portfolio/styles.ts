@@ -1,149 +1,135 @@
-import styled from 'styled-components'
-
+import styled from 'styled-components';
 
 export const Body = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  flex-direction: column;
-  color: #fff;
-  background: #fff;
+  background-color: #f9f9f9;
   min-height: 100vh;
   width: 100%;
+  color: #000;
 `;
 
 export const Container = styled.div`
-display: flex;
-background: #fafafa;
-width: 100%;
-min-height: 100vh;
-justify-content: space-around;
-flex-direction: column;
-color: #000;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fafafa;
 `;
 
 export const CardsContainer = styled.div`
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
-background: #fafafa;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 20px;
 `;
 
 export const Card = styled.div`
-display: flex;
-flex-direction: column;
-margin: 10px;
-border: solid 2px #565555;
-
-width: 350px;
-border-radius: 15px;
-box-shadow: rgb(0, 0, 0, 0.4) 0px 20px 30px -10px;
-padding: 30px;
-
-a {
-  display: flex;
-  justify-content: center;
-}
-
-h2 {
-  margin-top: 0.5em;
-  text-align: center;
-}
-
-p {
-  margin-top: 0.5em;
-  width: 100%;
-  font-weight: bold;
-}
-
-ul {
-  list-style: none;
-  margin-left: 0;
-  li {
-    font-size: 1em;
-    color: white;
-    line-height: 28px;
-    background: #000;
-    color: #fff;
-    margin-top: 5px;
-    border-radius: 5px;
-    text-align: center;
-    font-weight: bold;
-    transition: 0.1s ease-in;
-
-    &:hover {
-      background: #fff;
-      color: #000;
-      border: 2px solid #000;
-      transform: scale(1.05); /* Ajuste o valor conforme necessário para o zoom desejado */
-    }
-  }
-
-@media (max-width: 760px) {
-  width: 100%; /* Modifique conforme necessário para a versão responsiva */
-}
-
-`;
-
-
-export const CardImage = styled.img`
+  background-color: #fff;
+  border: 2px solid #565555;
   border-radius: 15px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 100%;
-  border: 2px solid #000;
-  padding-top: 16px;
-  margin-bottom: 20px;
-  transition: 0.2s ease-in;
+  max-width: 350px;
 
   &:hover {
-    transform: scale(1.05); /* Ajuste o valor conforme necessário para o zoom desejado */
+    transform: translateY(-10px);
+    box-shadow: 0 25px 35px rgba(0, 0, 0, 0.3);
   }
 
+  a {
+    display: block;
+    text-align: center;
+  }
+
+  h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  p {
+    margin-top: 10px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+
+    li {
+      font-size: 0.9rem;
+      background-color: #000;
+      color: #fff;
+      padding: 8px 12px;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: all 0.2s ease;
+
+      &:hover {
+        background-color: #fff;
+        color: #000;
+        border: 2px solid #000;
+        transform: scale(1.05);
+      }
+    }
+  }
 `;
 
-export const SlideText = styled.p`
-color: white;
-font-size: 18px;
-text-align: center;
-position: absolute;
-bottom: 40px;
-font-weight: 700;
-background: #000;
+export const CardImage = styled.img`
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 `;
 
 export const PortfolioText = styled.p`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 90%;
-  border: 2px solid #000;
-  border-radius: 15px;
-  padding: 1.5em;
-  text-align: center;
-  margin-bottom: 5px;
-  font-weight: bold;
+  max-width: 900px;
+  background-color: #000;
   color: #fff;
-  box-shadow: rgb(0, 0, 0, 0.4) 0px 20px 30px -10px;
-`
-
-export const SlideDescription = styled.p`
-  color: white;
-  font-size: 18px;
+  padding: 1.5em;
+  border-radius: 10px;
+  font-weight: bold;
   text-align: center;
-  position: absolute;
-  bottom: 60px;
-  font-weight: 700;
-  background: #000;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
 `;
 
 export const SelectedTech = styled.select`
-  width: 200px; /* Ajuste a largura conforme necessário */
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 2px solid #000;
-  border-radius: 5px;
-  color: #000;
-  background-color: #fff;
-  font-size: 16px;
+  width: 220px;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 2px solid #61dafb;
+  border-radius: 8px;
+  background-color: #1c1c1c;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
   cursor: pointer;
   outline: none;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+
+  &:hover {
+    border-color: #fff;
+    background-color: #333;
+  }
 `;
+

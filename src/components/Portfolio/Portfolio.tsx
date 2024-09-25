@@ -11,56 +11,56 @@ export const portfolio_projects = [
     name: 'Estágio',
     description: `Plataforma para personais`,
     link: 'www.quivon.com.br',
-    image: 'https://cdn.discordapp.com/attachments/1001887956568653975/1138375944189513769/Captura_de_Tela_234.png',
+    image: 'https://cdn.greatpages.com.br/www.quivon.app/1701456960/imagens/desktop/297628_1_169324645464ece3f645b8c302761138.png',
     techs: ['HTML', 'CSS', 'JAVASCRIPT', 'TYPESCRIPT', 'REACTJS', 'STYLED-COMPONENTS', 'REDUX', 'REDUX-SAGAS']
   },
   {
     name: 'Plataforma para cursos',
     description: 'Plataforma EAD',
     link: 'ignite-lab-react-mu-two.vercel.app/',
-    image: 'https://cdn.discordapp.com/attachments/1001887956568653975/1138204792880115822/Captura_de_Tela_254.png?',
+    image: 'https://cdn.discordapp.com/attachments/840680667842871306/1288486598882889778/image.png?ex=66f55c28&is=66f40aa8&hm=fb51107b701a4a5505d061f2c299477e0a46d2856a37e94e0249048f952adbab&',
     techs: ['HTML', 'CSS', 'JAVASCRIPT', 'REACTJS', 'TYPESCRIPT']
   },
   {
     name: 'Bate Papo Global',
     description: 'Chat com amigos',
     link: 'bate-papo-global.vercel.app',
-    image: 'https://media.discordapp.net/attachments/840680667842871306/1167385976457400330/image.png?ex=654defe9&is=653b7ae9&hm=5979fc4dc0b36acd9c86be1057f1b5bcccf7d3506d468640f7cb1445e1e53067&',
+    image: 'https://media.discordapp.net/attachments/840680667842871306/1288487062567260190/image.png?ex=66f55c96&is=66f40b16&hm=a9f34913c503d9460d4a663cc6dde7b4e43f6ae442389b9e547375a5095f1a4f&=&format=webp&quality=lossless&width=1440&height=637',
     techs: ['HTML', 'CSS', 'JAVASCRIPT', 'REACTJS', 'TYPESCRIPT', 'STYLED-COMPONENTS', 'FIREBASE'],
   },
   {
     name: 'Clima360',
     description: 'Confira agora como está a temperatura de qualquer local do mundo!',
     link: 'clima360.vercel.app/',
-    image: 'https://media.discordapp.net/attachments/840680667842871306/1204024553882390528/image.png?ex=65d33a3f&is=65c0c53f&hm=9a7ec082ad42ff0b28738d397d4231af045d6e0b1805adb1c0d8d3f761349bc2&=&format=webp&quality=lossless&width=886&height=498',
+    image: 'https://media.discordapp.net/attachments/840680667842871306/1288487298325024838/image.png?ex=66f55cce&is=66f40b4e&hm=7a9a96dda5223544d21d70e4089255fa5e3caff997275a6f7a4394da7be40e04&=&format=webp&quality=lossless&width=440&height=223',
     techs: ['HTML', 'CSS', 'JAVASCRIPT', 'VUE'],
   },
   {
     name: 'Landing Page Cabelereiro',
     description: 'Landing Page para barbearia',
-    link: 'https://media.discordapp.net/attachments/840680667842871306/1204042503028744203/image.png?ex=65d34af6&is=65c0d5f6&hm=cfe0140dfb5733d7135939cd007b51b472614723b4912f49b48d322929952a64&=&format=webp&quality=lossless&width=886&height=498',
-    image: 'https://media.discordapp.net/attachments/840680667842871306/1204042503028744203/image.png?ex=65d34af6&is=65c0d5f6&hm=cfe0140dfb5733d7135939cd007b51b472614723b4912f49b48d322929952a64&=&format=webp&quality=lossless&width=886&height=498',
+    link: 'https://whitelabel-profissional.vercel.app/',
+    image: 'https://cdn.discordapp.com/attachments/840680667842871306/1288505940496351334/image.png?ex=66f56e2b&is=66f41cab&hm=27a3c5de8cc4c15ed6c52ccb10d8ea580938b1cd1db0f75beca0e24263580270&',
     techs: ['HTML', 'CSS', 'JAVASCRIPT', 'REACTJS']
   },
   {
     name: 'iMovi',
     description: 'Landing Page',
     link: 'igormarines.github.io/LearningBootsTrap/',
-    image: 'https://media.discordapp.net/attachments/1001887956568653975/1138367556080635915/image.png?',
+    image: 'https://cdn.discordapp.com/attachments/840680667842871306/1288491490384810088/image.png?ex=66f560b6&is=66f40f36&hm=a76466b4c636ae51aae608113d6b7264e168b31d834093f059cce0f72a916078&',
     techs: ['HTML', 'CSS', 'BOOTSTRAP']
   },
   {
     name: 'Api de Filmes',
     description: 'Consumo de API ROCKETFLIX',
     link: 'igormarines.github.io/Rocketflix/',
-    image: 'https://media.discordapp.net/attachments/1001887956568653975/1138376372142747708/image.png?',
+    image: 'https://media.discordapp.net/attachments/840680667842871306/1288492297733800042/image.png?ex=66f56176&is=66f40ff6&hm=91bd5995649e0f638019d21d5f16a90a370957d995e1c2888f98715fdf9d35e5&=&format=webp&quality=lossless&',
     techs: ['HTML', 'CSS', 'JAVASCRIPT']
   },
   {
     name: 'To-Do Simples',
     description: 'Lista de presença simples',
     link: 'react-rocketseat-todo-xdnr.vercel.app/',
-    image: 'https://cdn.discordapp.com/attachments/1106000641039536188/1164955151958823012/image.png?ex=65451808&is=6532a308&hm=ca04c07636b0ad9f1c7aff281960ed86f4c38d242f3ef24cbcd95b679a679d8a&',
+    image: 'https://media.discordapp.net/attachments/840680667842871306/1288489311158665308/image.png?ex=66f55eae&is=66f40d2e&hm=dd876a286fcb14e9eb2fa07a50ffed9398e07270a537a110838130ce8065df97&=&format=webp&quality=lossless&',
     techs: ['HTML', 'CSS', 'JAVASCRIPT', 'TYPESCRIPT', 'REACTJS']
   },
   {
@@ -104,7 +104,7 @@ const Portfolio = () => {
 
         <S.CardsContainer>
           {filteredProjects.map((project, index) => (
-            <S.Card key={index} className={`animate__animated animate__fadeIn animate__delay-${index}s`}>
+            <S.Card key={index}>
               <Link to={`${index}`}>
                 <S.CardImage src={project.image} alt={project.name} />
               </Link>
