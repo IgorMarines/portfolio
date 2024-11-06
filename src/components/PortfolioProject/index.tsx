@@ -18,6 +18,8 @@ const PortfolioProject = () => {
 
   const selectedProject = portfolio_projects[projectId];
 
+  const link = selectedProject.link.startsWith('http') ? selectedProject.link : `https://${selectedProject.link}`;
+
   return (
     <S.Container>
       <Home />
@@ -38,7 +40,7 @@ const PortfolioProject = () => {
             ))}
           </S.Techs>
 
-          <a href={`http://${selectedProject.link}`} target='_blank' rel='noopener noreferrer'>
+          <a href={link} target='_blank' rel='noopener noreferrer'>
             <S.Button>Visitar Projeto</S.Button>
           </a>
         </S.DetailsWrapper>
