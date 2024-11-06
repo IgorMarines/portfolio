@@ -5,8 +5,6 @@ import { useMediaQuery } from '@mui/material';
 import Home from '../Header/home';
 
 const PortfolioProject = () => {
-
-  const isMobile = useMediaQuery('(max-width:600px)');
   const { id } = useParams();
 
   if (id === undefined) {
