@@ -1,7 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { portfolio_projects } from '../Portfolio/Portfolio';
 import * as S from './styles';
-import { useMediaQuery } from '@mui/material';
 import Home from '../Header/home';
 
 const PortfolioProject = () => {

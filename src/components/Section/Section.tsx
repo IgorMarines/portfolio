@@ -5,7 +5,7 @@ import itadori from '../../assets/images/ena2.jpg';
 import { useMediaQuery } from '@mui/material';
 import { useState } from 'react';
 
-import curriculo from '../../assets/downloads/Curriculo.pdf';
+// import curriculo from '../../assets/downloads/Curriculo.pdf';
 
 const Content = () => {
 
