@@ -1,37 +1,90 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Body = styled.div`
-  background: #000; /* Gradiente suave para dar profundidade */
-  color: #fff;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px; /* Adiciona espaçamento interno para dispositivos menores */
-  box-sizing: border-box;
-`
+    display: flex;
+    justify-content: center;
+    background-color: #000; 
+    color: #ffffff;
+`;
 
 export const Container = styled.div`
-  border: 2px solid #61dafb; /* Cor de destaque para o contorno */
-  width: 70%;
-  max-width: 800px; /* Limita a largura máxima para evitar telas muito largas */
-  background: #000; /* Fundo semitransparente para criar contraste suave */
-  padding: 2.5rem;
-  font-size: 24px;
-  text-align: center;
-  border-radius: 15px; /* Borda arredondada para um visual mais moderno */
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5); /* Sombra para efeito de elevação */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-  &:hover {
-    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
-    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.7); /* Aumenta a sombra no hover */
-  }
-
-  @media (max-width: 760px) {
-    width: 90%; /* Ajuste para telas menores */
-    font-size: 20px;
+    width: 100%;
+    max-width: 900px;
     padding: 1.5rem;
-  }
-`
+    background-color: #000;
+    border-radius: 10px;
+`;
+
+export const SectionTitle = styled.h2`
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #e0e0e0;
+`;
+
+export const IntroText = styled.p`
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #b0b0b0;
+`;
+
+export const SkillsSection = styled.div`
+    margin-bottom: 2rem;
+`;
+
+export const SkillList = styled.ul`
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+`;
+
+export const SkillItem = styled.li`
+    font-size: 1rem;
+    color: ${({ color }) => color};
+`;
+
+export const ExperienceSection = styled.div`
+    margin-bottom: 2rem;
+`;
+
+export const Experience = styled.div`
+    margin-bottom: 1.5rem;
+`;
+
+export const CompanyName = styled.h4`
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #e0e0e0;
+`;
+
+export const Position = styled.h5`
+    font-size: 1rem;
+    font-weight: normal;
+    color: #a0a0a0;
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+`;
+
+export const ContactSection = styled.div`
+    text-align: center;
+    font-size: 1rem;
+`;
+
+export const Links = styled.div`
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    & a {
+        color: #1e90ff;
+        text-decoration: none;
+        font-weight: bold;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+`;

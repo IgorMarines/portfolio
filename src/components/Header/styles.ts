@@ -4,11 +4,17 @@ export const Header = styled.div`
   color: #fff;
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Para garantir alinhamento vertical */
+  align-items: center;
   width: 100%;
-  padding: 1.5em 2.5em; /* Substituí margem por padding para controle de espaço interno */
-  background-color: #000; /* Adicionei um fundo para maior contraste */
+  padding: 1.5em 2.5em;
+  background-color: #000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: width 0.3s ease;
+
+  @media (max-width: 600px) {
+    padding: 1em 1.5em;
+  }
 `;
 
 const LinkPulse = keyframes`
@@ -16,7 +22,7 @@ const LinkPulse = keyframes`
     transform: scale(1);
   }
   50% {
-    transform: scale(0.8);
+    transform: scale(1.2);
   }
   100% {
     transform: scale(1);
@@ -29,19 +35,20 @@ export const Link_Container = styled.div`
   align-items: center;
   flex-direction: column;
   color: #fff;
-  font-size: 2em;
-  font-weight: 800;
-  gap: 15px; /* Adicionei espaçamento entre os elementos */
+  font-size: 1.5em;
+  font-weight: 600;
+  gap: 15px;
 
   img {
-    width: 30px;
-    height: 30px;
-    transition: all 0.3s ease; /* Transição suave em hover */
-
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    border-radius: 5px;
+    
     &:hover {
       animation: ${LinkPulse} 1.5s ease-in-out infinite;
-      width: 35px;
-      height: 35px;
+      filter: brightness(1.2);
+      transform: scale(1.2);
     }
   }
 
@@ -49,11 +56,13 @@ export const Link_Container = styled.div`
     text-decoration: none;
     color: #fff;
     display: inline-block;
-    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: transform 0.3s ease, color 0.3s ease;
 
     &:hover {
       transform: scale(1.1);
-      color: #61dafb; /* Cor de destaque ao passar o mouse */
+      color: #61dafb; /* Blue highlight */
     }
   }
 `;

@@ -1,13 +1,12 @@
 import { useParams } from 'react-router-dom';
 import { portfolio_projects } from '../Portfolio/Portfolio';
-import * as S from './styles'
+import * as S from './styles';
 import { useMediaQuery } from '@mui/material';
 import Home from '../Header/home';
 
 const PortfolioProject = () => {
 
   const isMobile = useMediaQuery('(max-width:600px)');
-
   const { id } = useParams();
 
   if (id === undefined) {
@@ -25,22 +24,27 @@ const PortfolioProject = () => {
   return (
     <S.Container>
       <Home />
-      <h1>{selectedProject.name}</h1>
-      <p>
-        {selectedProject.description}
-      </p>
+      <S.Header>
+        <h1>{selectedProject.name}</h1>
+        <S.Description>{selectedProject.description}</S.Description>
+      </S.Header>
       <S.Main>
-        <S.Techs style={{ flexWrap: isMobile ? 'wrap' : 'nowrap' }}>
-          {selectedProject.techs.map((tech, index) => {
-            return (
-              <p className={`animate__animated animate__fadeIn animate__delay-${index}s`}>{tech}</p>
-            )
-          })}
-        </S.Techs>
+        <S.ImageWrapper>
+          <S.ProjectImage src={selectedProject.image} alt={selectedProject.name} />
+        </S.ImageWrapper>
 
-        <a href={`http://${selectedProject.link}`} target='_blank' rel='noopener noreferrer'>
-          <img src={selectedProject.image} alt={selectedProject.name} />
-        </a>
+        <S.DetailsWrapper>
+          <S.TechsTitle>Tecnologias Usadas:</S.TechsTitle>
+          <S.Techs>
+            {selectedProject.techs.map((tech, index) => (
+              <S.Tech key={index}>{tech}</S.Tech>
+            ))}
+          </S.Techs>
+
+          <a href={`http://${selectedProject.link}`} target='_blank' rel='noopener noreferrer'>
+            <S.Button>Visitar Projeto</S.Button>
+          </a>
+        </S.DetailsWrapper>
       </S.Main>
     </S.Container>
   );

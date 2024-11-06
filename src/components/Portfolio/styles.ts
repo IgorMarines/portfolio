@@ -5,10 +5,10 @@ export const Body = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: #f9f9f9;
+  background-color: #f0f0f5; /* Um tom mais claro para destacar os cards */
   min-height: 100vh;
   width: 100%;
-  color: #000;
+  color: #333;
 `;
 
 export const Container = styled.div`
@@ -16,7 +16,7 @@ export const Container = styled.div`
   flex-direction: column;
   width: 100%;
   min-height: 100vh;
-  background-color: #fafafa;
+  background-color: #f7f7f7;
 `;
 
 export const CardsContainer = styled.div`
@@ -29,9 +29,9 @@ export const CardsContainer = styled.div`
 
 export const Card = styled.div`
   background-color: #fff;
-  border: 2px solid #565555;
-  border-radius: 15px;
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ddd; /* Bordas mais suaves */
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
   padding: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 100%;
@@ -39,7 +39,7 @@ export const Card = styled.div`
 
   &:hover {
     transform: translateY(-10px);
-    box-shadow: 0 25px 35px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
   }
 
   a {
@@ -49,14 +49,15 @@ export const Card = styled.div`
 
   h2 {
     margin-top: 10px;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     text-align: center;
+    color: #333;
   }
 
   p {
     margin-top: 10px;
     font-weight: 600;
-    color: #333;
+    color: #555;
     text-align: center;
   }
 
@@ -70,19 +71,19 @@ export const Card = styled.div`
     justify-content: center;
 
     li {
-      font-size: 0.9rem;
-      background-color: #000;
+      font-size: 0.85rem;
+      background-color: #333;
       color: #fff;
-      padding: 8px 12px;
-      border-radius: 5px;
+      padding: 6px 10px;
+      border-radius: 4px;
       font-weight: bold;
       transition: all 0.2s ease;
 
       &:hover {
         background-color: #fff;
-        color: #000;
-        border: 2px solid #000;
-        transform: scale(1.05);
+        color: #333;
+        border: 1px solid #333;
+        transform: scale(1.1);
       }
     }
   }
@@ -90,9 +91,9 @@ export const Card = styled.div`
 
 export const CardImage = styled.img`
   width: 100%;
-  height: 200px;
+  height: 180px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 8px;
   margin-bottom: 15px;
   transition: transform 0.3s ease;
 
@@ -103,23 +104,22 @@ export const CardImage = styled.img`
 
 export const PortfolioText = styled.p`
   max-width: 900px;
-  background-color: #000;
   color: #fff;
   padding: 1.5em;
-  border-radius: 10px;
+  border-radius: 8px;
   font-weight: bold;
   text-align: center;
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
   margin-bottom: 20px;
 `;
 
 export const SelectedTech = styled.select`
   width: 220px;
-  padding: 12px 15px;
+  padding: 10px 15px;
   margin-bottom: 20px;
-  border: 2px solid #61dafb;
-  border-radius: 8px;
-  background-color: #1c1c1c;
+  border: 1px solid #61dafb;
+  border-radius: 6px;
+  background-color: #282c34;
   color: #fff;
   font-size: 1rem;
   font-weight: 500;
@@ -132,4 +132,3 @@ export const SelectedTech = styled.select`
     background-color: #333;
   }
 `;
-

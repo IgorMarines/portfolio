@@ -4,6 +4,25 @@ import Footer from '../Footer/Footer.tsx';
 import Logotipo from '../Header/home/index.tsx';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import filmeAleatorio from '../../assets/images/filmeAleatorio.png'
+
+import informacoesMetereologicas from '../../assets/images/InformacoesMetereologicas.png'
+//listaPresenca
+import listaPresenca from '../../assets/images/listaPresenca.png'
+//mobiliariaLandingPage
+import mobiliariaLandingPage from '../../assets/images/mobiliariaLandingPage.png'
+// plataformaEstudos
+import plataformaEstudos from '../../assets/images/plataformaEstudos.png'
+// LandingPageCabelos
+import landingPageCabelos from '../../assets/images/landingPageCabelos.png'
+// quivonLandingPageEstagio
+import quivonLandingPage from '../../assets/images/quivonLandingPage.png'
+// BatePapo
+import batePapoGlobal from '../../assets/images/batePapo.png'
+// todoMobile
+import todoMobile from '../../assets/images/mobile-todo.png'
+// sistemaAdvocacia
+import sistemaAdvocacia from '../../assets/images/sistemaAdvocacia.png'
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const portfolio_projects = [
@@ -11,63 +30,70 @@ export const portfolio_projects = [
     name: 'Estágio',
     description: `Plataforma para personais`,
     link: 'www.quivon.com.br',
-    image: 'https://cdn.greatpages.com.br/www.quivon.app/1701456960/imagens/desktop/297628_1_169324645464ece3f645b8c302761138.png',
+    image: quivonLandingPage,
     techs: ['HTML', 'CSS', 'JAVASCRIPT', 'TYPESCRIPT', 'REACTJS', 'STYLED-COMPONENTS', 'REDUX', 'REDUX-SAGAS']
+  },
+  {
+    name: 'Sistema de Advocacia',
+    link: '#',
+    description: 'Sistema de advocacia para advogados',
+    image: sistemaAdvocacia,
+    techs: ['HTML', 'CSS', 'JAVASCRIPT', 'VUEJS', 'LARAVEL', 'MYSQL', 'VUETIFY']
   },
   {
     name: 'Plataforma para cursos',
     description: 'Plataforma EAD',
     link: 'ignite-lab-react-mu-two.vercel.app/',
-    image: 'https://cdn.discordapp.com/attachments/840680667842871306/1288486598882889778/image.png?ex=66f55c28&is=66f40aa8&hm=fb51107b701a4a5505d061f2c299477e0a46d2856a37e94e0249048f952adbab&',
+    image: plataformaEstudos,
     techs: ['HTML', 'CSS', 'JAVASCRIPT', 'REACTJS', 'TYPESCRIPT']
   },
   {
     name: 'Bate Papo Global',
-    description: 'Chat com amigos',
+    description: 'Bate Papo Global para interagir com outras pessoas',
     link: 'bate-papo-global.vercel.app',
-    image: 'https://media.discordapp.net/attachments/840680667842871306/1288487062567260190/image.png?ex=66f55c96&is=66f40b16&hm=a9f34913c503d9460d4a663cc6dde7b4e43f6ae442389b9e547375a5095f1a4f&=&format=webp&quality=lossless&width=1440&height=637',
+    image: batePapoGlobal,
     techs: ['HTML', 'CSS', 'JAVASCRIPT', 'REACTJS', 'TYPESCRIPT', 'STYLED-COMPONENTS', 'FIREBASE'],
   },
   {
     name: 'Clima360',
     description: 'Confira agora como está a temperatura de qualquer local do mundo!',
     link: 'clima360.vercel.app/',
-    image: 'https://media.discordapp.net/attachments/840680667842871306/1288487298325024838/image.png?ex=66f55cce&is=66f40b4e&hm=7a9a96dda5223544d21d70e4089255fa5e3caff997275a6f7a4394da7be40e04&=&format=webp&quality=lossless&width=440&height=223',
+    image: informacoesMetereologicas,
     techs: ['HTML', 'CSS', 'JAVASCRIPT', 'VUE'],
   },
   {
     name: 'Landing Page Cabelereiro',
     description: 'Landing Page para barbearia',
     link: 'https://whitelabel-profissional.vercel.app/',
-    image: 'https://cdn.discordapp.com/attachments/840680667842871306/1288505940496351334/image.png?ex=66f56e2b&is=66f41cab&hm=27a3c5de8cc4c15ed6c52ccb10d8ea580938b1cd1db0f75beca0e24263580270&',
+    image: landingPageCabelos,
     techs: ['HTML', 'CSS', 'JAVASCRIPT', 'REACTJS']
   },
   {
     name: 'iMovi',
     description: 'Landing Page',
     link: 'igormarines.github.io/LearningBootsTrap/',
-    image: 'https://cdn.discordapp.com/attachments/840680667842871306/1288491490384810088/image.png?ex=66f560b6&is=66f40f36&hm=a76466b4c636ae51aae608113d6b7264e168b31d834093f059cce0f72a916078&',
+    image: mobiliariaLandingPage,
     techs: ['HTML', 'CSS', 'BOOTSTRAP']
   },
   {
     name: 'Api de Filmes',
     description: 'Consumo de API ROCKETFLIX',
     link: 'igormarines.github.io/Rocketflix/',
-    image: 'https://media.discordapp.net/attachments/840680667842871306/1288492297733800042/image.png?ex=66f56176&is=66f40ff6&hm=91bd5995649e0f638019d21d5f16a90a370957d995e1c2888f98715fdf9d35e5&=&format=webp&quality=lossless&',
+    image: filmeAleatorio,
     techs: ['HTML', 'CSS', 'JAVASCRIPT']
   },
   {
     name: 'To-Do Simples',
     description: 'Lista de presença simples',
     link: 'react-rocketseat-todo-xdnr.vercel.app/',
-    image: 'https://media.discordapp.net/attachments/840680667842871306/1288489311158665308/image.png?ex=66f55eae&is=66f40d2e&hm=dd876a286fcb14e9eb2fa07a50ffed9398e07270a537a110838130ce8065df97&=&format=webp&quality=lossless&',
+    image: listaPresenca,
     techs: ['HTML', 'CSS', 'JAVASCRIPT', 'TYPESCRIPT', 'REACTJS']
   },
   {
     name: 'To-Do Mobile [ PROJETO PRIVADO ]',
-    description: 'Presente de aniversário para minha Namorada',
+    description: 'Presente de aniversário',
     link: '',
-    image: 'https://media.discordapp.net/attachments/1106000641039536188/1204031560836186122/image.png?ex=65d340c5&is=65c0cbc5&hm=e2b69f060250c5e81717314b4481fb3612a386e6825cd55d33829c67425ac286&=&format=webp&quality=lossless',
+    image: todoMobile,
     techs: ['HTML', 'CSS', 'STYLED-COMPONENTS', 'REACT-NATIVE', '@EXPO/CLI', 'LocalStorage']
   }
 ];

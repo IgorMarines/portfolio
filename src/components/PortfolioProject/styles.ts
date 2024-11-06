@@ -1,107 +1,137 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 100%;
-  background: #000;
+  background: #111;
   min-height: 100vh;
-  padding-top: 15px;
+  padding-top: 20px;
   color: #fff;
   text-align: center;
+  font-family: 'Arial', sans-serif;
+`;
 
-  img {
-    width: 80%;
-    max-width: 1280px;
-    border-radius: 10px;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5); /* Sombra para destaque */
-    transition: transform 0.3s ease-in-out;
+export const Header = styled.div`
+  margin-bottom: 40px;
 
-    &:hover {
-      transform: scale(1.05); /* Leve zoom ao passar o mouse */
-    }
-  }
-
-  pre {
-    font-size: 16px;
-    line-height: 1.6;
-    text-align: left;
-    background: #111;
-    padding: 15px;
-    border-radius: 10px;
-    color: #61dafb; /* Cor de destaque do texto */
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5); /* Sombra para destaque */
-    white-space: pre-wrap; /* Quebra de linha para evitar overflow horizontal */
-  }
-`
-
-export const Main = styled.div`
-  display: flex;
-  align-items: flex-start;
-  min-height: 100vh;
-  padding: 20px;
-  gap: 20px; /* Espaçamento entre elementos */
-
-  a {
-    margin-top: 25px;
-
-    img {
-      border-radius: 15px;
-      border: 3px solid #fff;
-      transition: transform 0.3s ease-in-out, border-color 0.3s ease;
-
-      &:hover {
-        transform: scale(1.1);
-        border-color: #61dafb; /* Cor de destaque no hover */
-      }
-    }
-  }
-
-  @media (max-width: 760px) {
-    flex-direction: column;
-    width: 100%;
-    padding: 10px;
-  }
-`
-
-export const Techs = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-  flex-wrap: wrap;
-  margin-top: 45px;
-  align-items: center;
-  background: #111;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
-
-  @media (max-width: 760px) {
-    width: 100%;
+  h1 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
   }
 
   p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #fff;
-    color: #000;
-    padding: 10px 15px;
-    margin-top: 10px;
-    width: 90%;
-    height: auto;
-    border-radius: 10px;
-    font-weight: bold;
-    text-align: center;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Sombra para efeito de elevação */
-
-    &:hover {
-      color: #fff;
-      background: #000;
-      border: 2px solid red;
-    }
-
-    @media (max-width: 760px) {
-      width: 80%;
-    }
+    font-size: 1.2rem;
+    color: #bbb;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: justify;
   }
-`
+`;
+
+export const Description = styled.p`
+  font-size: 1.1rem;
+  color: #ddd;
+  line-height: 1.8;
+  margin-top: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+`;
+
+export const Main = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+  
+  @media (max-width: 760px) {
+    flex-direction: column;
+    padding: 20px;
+  }
+`;
+
+export const ImageWrapper = styled.div`
+  width: 50%;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+
+  @media (max-width: 760px) {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+`;
+
+export const ProjectImage = styled.img`
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+`;
+
+export const DetailsWrapper = styled.div`
+  width: 50%;
+  max-width: 600px;
+  text-align: left;
+  padding: 20px;
+  background: #1e1e1e;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+
+  @media (max-width: 760px) {
+    width: 100%;
+  }
+`;
+
+export const TechsTitle = styled.h3`
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 15px;
+`;
+
+export const Techs = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+`;
+
+export const Tech = styled.p`
+  background: #333;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    background: #444;
+    transform: translateY(-5px);
+  }
+`;
+
+export const Button = styled.button`
+  background: #61dafb;
+  color: #111;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    background: #4fa3e2;
+    transform: scale(1.05);
+  }
+`;
