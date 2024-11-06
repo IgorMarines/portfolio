@@ -14,7 +14,7 @@ import mobiliariaLandingPage from '../../assets/images/mobiliariaLandingPage.png
 // plataformaEstudos
 import plataformaEstudos from '../../assets/images/plataformaEstudos.png'
 // LandingPageCabelos
-import landingPageCabelos from '../../assets/images/landingPageCabelos.png'
+import landingPageCabelos from '../../assets/images/LandingPageCabelos.png'
 // quivonLandingPageEstagio
 import quivonLandingPage from '../../assets/images/quivonLandingPage.png'
 // BatePapo
