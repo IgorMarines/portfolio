@@ -5,7 +5,7 @@ import itadori from '../../assets/images/ena2.jpg';
 import { useMediaQuery } from '@mui/material';
 import { useState } from 'react';
 
-// import curriculo from '../../assets/downloads/Curriculo.pdf';
+import curriculo from '../../assets/downloads/Curriculo.pdf';
 
 const Content = () => {
 
@@ -23,7 +23,7 @@ const Content = () => {
               <a style={{ color: '#000', display: 'block', background: '#fff', textDecoration: 'none', width: 200, borderRadius: 5, marginTop: 15, padding: '5px 5px', textAlign: 'center' }} href="https://wa.me/5511954348405" target='_blank'> Fale Comigo</a>
 
               {/* Botão de download para o CV */}
-              {/* <a
+              <a
                 style={{
                   color: '#fff',
                   display: 'block',
@@ -41,7 +41,7 @@ const Content = () => {
                 download="Curriculo_Igor_Marines.pdf"
               >
                 Baixar CV
-              </a> */}
+              </a>
             </S.Description>
           </S.Left>
           <S.Right style={{ display: isMobile ? 'none' : 'flex' }}>
