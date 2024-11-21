@@ -40,14 +40,14 @@ export const portfolio_projects = [
     link: '',
     description: 'Sistema de advocacia para advogados',
     image: sistemaAdvocacia,
-    techs: ['HTML', 'CSS', 'JAVASCRIPT', 'VUEJS', 'LARAVEL', 'MYSQL', 'VUETIFY']
+    techs: ['HTML', 'CSS', 'JAVASCRIPT', 'VUE', 'LARAVEL', 'MYSQL', 'VUETIFY']
   },
   {
     name: 'Gerenciador de Tarefas',
     link: 'https://github.com/IgorMarines/GerenciadorTarefas',
     description: 'Gerenciador de tarefas com arrasta e solta',
     image: taskManager,
-    techs: ['HTML', 'CSS', 'JAVASCRIPT', 'VUEJS', 'LARAVEL', 'MYSQL', 'Vuetify']
+    techs: ['HTML', 'CSS', 'JAVASCRIPT', 'VUE', 'LARAVEL', 'MYSQL', 'Vuetify']
   },
   {
     name: 'Plataforma para cursos',
