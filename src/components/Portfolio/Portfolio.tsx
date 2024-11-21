@@ -24,7 +24,7 @@ import todoMobile from '../../assets/images/mobile-todo.png'
 // sistemaAdvocacia
 import sistemaAdvocacia from '../../assets/images/sistemaAdvocacia.png'
 // TaskManager
-import taskManager from '../../assets/images/taskManager.png'
+import taskManager from '../../assets/images/TaskManager.png'
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const portfolio_projects = [
