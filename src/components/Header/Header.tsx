@@ -27,13 +27,13 @@ const Header = () => {
 
     return (
         <S.Header style={{ width: isMobile ? '80%' : '40%' }}>
-            {links_header.map((link) => (
-                <S.Link_Container key={link.name}>
-                    <a href={`http://${link.link}`} target='_blank' rel='noopener noreferrer'>
-                        <img src={link.icon} alt={link.name} />
+            <div>
+                <S.Link_Container>
+                    <a rel='noopener noreferrer' style={{ textDecoration: 'none', color: '#fff' }} href='/about'>
+                        SOBRE
                     </a>
                 </S.Link_Container>
-            ))}
+            </div>
             <div>
                 <S.Link_Container>
                     <a rel='noopener noreferrer' style={{ textDecoration: 'none', color: '#fff' }} href='/portfolio'>
