@@ -23,6 +23,8 @@ import batePapoGlobal from '../../assets/images/batePapo.png'
 import todoMobile from '../../assets/images/mobile-todo.png'
 // sistemaAdvocacia
 import sistemaAdvocacia from '../../assets/images/sistemaAdvocacia.png'
+// TaskManager
+import taskManager from '../../assets/images/taskManager.png'
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const portfolio_projects = [
@@ -35,10 +37,17 @@ export const portfolio_projects = [
   },
   {
     name: 'Sistema de Advocacia',
-    link: '#',
+    link: '',
     description: 'Sistema de advocacia para advogados',
     image: sistemaAdvocacia,
     techs: ['HTML', 'CSS', 'JAVASCRIPT', 'VUEJS', 'LARAVEL', 'MYSQL', 'VUETIFY']
+  },
+  {
+    name: 'Gerenciador de Tarefas',
+    link: 'https://github.com/IgorMarines/GerenciadorTarefas',
+    description: 'Gerenciador de tarefas com arrasta e solta',
+    image: taskManager,
+    techs: ['HTML', 'CSS', 'JAVASCRIPT', 'VUEJS', 'LARAVEL', 'MYSQL', 'Vuetify']
   },
   {
     name: 'Plataforma para cursos',
