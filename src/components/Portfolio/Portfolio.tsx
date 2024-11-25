@@ -25,6 +25,8 @@ import todoMobile from '../../assets/images/mobile-todo.png'
 import sistemaAdvocacia from '../../assets/images/sistemaAdvocacia.png'
 // TaskManager
 import taskManager from '../../assets/images/TaskManager.png'
+// FocalPoint
+import focalPoint from '../../assets/images/FocalPoint.png'
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const portfolio_projects = [
@@ -34,6 +36,13 @@ export const portfolio_projects = [
     link: 'www.quivon.com.br',
     image: quivonLandingPage,
     techs: ['HTML', 'CSS', 'JAVASCRIPT', 'TYPESCRIPT', 'REACTJS', 'STYLED-COMPONENTS', 'REDUX', 'REDUX-SAGAS']
+  },
+  {
+    name: 'FocalPoint',
+    description: 'Site para criação de gestão de task através de um check',
+    link: 'https://github.com/IgorMarines/legaplan-app',
+    image: focalPoint,
+    techs: ['HTML', 'CSS', 'JAVASCRIPT', 'REACTJS', 'NEXTJS']
   },
   {
     name: 'Sistema de Advocacia',
