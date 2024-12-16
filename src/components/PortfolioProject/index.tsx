@@ -7,17 +7,16 @@ const PortfolioProject = () => {
   const { id } = useParams();
 
   if (id === undefined) {
-    return <div>ID do projeto não fornecido.</div>;
+    return <S.Container>ID do projeto não fornecido.</S.Container>;
   }
 
   const projectId = parseInt(id, 10);
 
   if (isNaN(projectId) || projectId < 0 || projectId >= portfolio_projects.length) {
-    return <div>Projeto não encontrado.</div>;
+    return <S.Container>Projeto não encontrado.</S.Container>;
   }
 
   const selectedProject = portfolio_projects[projectId];
-
   const link = selectedProject.link.startsWith('http') ? selectedProject.link : `https://${selectedProject.link}`;
 
   return (

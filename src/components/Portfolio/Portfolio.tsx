@@ -28,7 +28,8 @@ import taskManager from '../../assets/images/TaskManager.png'
 // FocalPoint
 import focalPoint from '../../assets/images/FocalPoint.png'
 
-// eslint-disable-next-line react-refresh/only-export-components
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+
 export const portfolio_projects = [
   {
     name: 'Estágio',
@@ -117,7 +118,9 @@ export const portfolio_projects = [
 ];
 
 
+
 const Portfolio = () => {
+
   const [selectedTech, setSelectedTech] = useState('');
 
   const filteredProjects = portfolio_projects.filter(project =>
@@ -129,23 +132,21 @@ const Portfolio = () => {
   return (
     <S.Body>
       <S.Container>
-        <div style={{ display: 'flex', justifyContent: 'space-around', width: '100%', backgroundColor: '#000' }}>
-          <S.PortfolioText>
-            <div style={{ paddingRight: 5 }}>
-              <Logotipo />
-            </div>
+        <S.Header>
+          <Logotipo />
+          <p>
             Transformando ideias em realidade por meio da paixão pela criação e da busca constante pela excelência.
-          </S.PortfolioText>
-        </div>
+          </p>
+        </S.Header>
 
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: 10 }}>
+        <S.FilterContainer>
           <S.SelectedTech value={selectedTech} onChange={(e) => setSelectedTech(e.target.value)}>
             <option value="">Todos</option>
             {allTechs.map((tech, index) => (
               <option key={index} value={tech}>{tech}</option>
             ))}
           </S.SelectedTech>
-        </div>
+        </S.FilterContainer>
 
         <S.CardsContainer>
           {filteredProjects.map((project, index) => (
@@ -155,11 +156,19 @@ const Portfolio = () => {
               </Link>
               <h2>{project.name}</h2>
               <p>{project.description}</p>
-              <ul>
-                {project.techs.map((tech, index) => (
-                  <li style={{ color: project.techs.includes('REACTJS') ? '#61DAFB' : (project.techs.includes('VUE') ? '#4FC08D' : 'red') }} key={index}>{tech}</li>
+              <S.TechList>
+                {project.techs.map((tech, idx) => (
+                  <li
+                    key={idx}
+                    style={{
+                      color: tech === 'REACTJS' ? '#61DAFB' :
+                        tech === 'VUE' ? '#42B883' : '#ff6b6b'
+                    }}
+                  >
+                    {tech}
+                  </li>
                 ))}
-              </ul>
+              </S.TechList>
             </S.Card>
           ))}
         </S.CardsContainer>
@@ -170,3 +179,4 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
+

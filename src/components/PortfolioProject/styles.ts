@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 100%;
-  background: #111;
+  background: #0d0d0d; /* Fundo principal escuro */
   min-height: 100vh;
   padding-top: 20px;
   color: #fff;
@@ -18,12 +18,12 @@ export const Header = styled.div`
     color: #fff;
     margin-bottom: 15px;
     font-weight: 700;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
   }
 
   p {
     font-size: 1.2rem;
-    color: #bbb;
+    color: #aaa; /* Cinza claro */
     line-height: 1.6;
     max-width: 900px;
     margin: 0 auto;
@@ -33,7 +33,7 @@ export const Header = styled.div`
 
 export const Description = styled.p`
   font-size: 1.1rem;
-  color: #ddd;
+  color: #ccc; /* Tom mais suave */
   line-height: 1.8;
   margin-top: 20px;
   max-width: 900px;
@@ -47,7 +47,7 @@ export const Main = styled.div`
   gap: 50px;
   padding: 40px 20px;
   flex-wrap: wrap;
-  
+
   @media (max-width: 760px) {
     flex-direction: column;
     padding: 20px;
@@ -58,7 +58,7 @@ export const ImageWrapper = styled.div`
   width: 50%;
   overflow: hidden;
   border-radius: 15px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
 
   @media (max-width: 760px) {
     width: 100%;
@@ -83,9 +83,9 @@ export const DetailsWrapper = styled.div`
   max-width: 600px;
   text-align: left;
   padding: 20px;
-  background: #1e1e1e;
+  background: #1a1a1a; /* Fundo escuro */
   border-radius: 15px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
 
   @media (max-width: 760px) {
     width: 100%;
@@ -105,12 +105,12 @@ export const Techs = styled.div`
 `;
 
 export const Tech = styled.p`
-  background: #333;
-  color: #fff;
+  background: #2c2c2c;
+  color: #f1f1f1;
   padding: 8px 15px;
   border-radius: 8px;
   font-size: 1rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
   transition: background-color 0.3s ease, transform 0.3s ease;
 
   &:hover {
