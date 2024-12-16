@@ -32,14 +32,14 @@ import focalPoint from '../../assets/images/FocalPoint.png'
 export const portfolio_projects = [
   {
     name: 'Estágio',
-    description: `Plataforma para personais`,
+    description: `Plataforma para personal trainers com foco em eficiência, personalização e experiência do usuário, permitindo gerenciar treinos e acompanhar o progresso dos alunos de forma moderna.`,
     link: 'www.quivon.com.br',
     image: quivonLandingPage,
     techs: ['HTML', 'CSS', 'JAVASCRIPT', 'TYPESCRIPT', 'REACTJS', 'STYLED-COMPONENTS', 'REDUX', 'REDUX-SAGAS']
   },
   {
     name: 'FocalPoint',
-    description: 'Site para criação de gestão de task através de um check',
+    description: 'Ferramenta inovadora para gerenciamento de tarefas com uma interface intuitiva, simplificando a organização e o foco no cumprimento de metas diárias.',
     link: 'https://github.com/IgorMarines/legaplan-app',
     image: focalPoint,
     techs: ['HTML', 'CSS', 'JAVASCRIPT', 'REACTJS', 'NEXTJS']
@@ -47,74 +47,75 @@ export const portfolio_projects = [
   {
     name: 'Sistema de Advocacia',
     link: '',
-    description: 'Sistema de advocacia para advogados',
+    description: 'Sistema completo para escritórios de advocacia, otimizando o gerenciamento de processos, clientes e prazos com eficiência.',
     image: sistemaAdvocacia,
     techs: ['HTML', 'CSS', 'JAVASCRIPT', 'VUE', 'LARAVEL', 'MYSQL', 'VUETIFY']
   },
   {
     name: 'Gerenciador de Tarefas',
     link: 'https://github.com/IgorMarines/GerenciadorTarefas',
-    description: 'Gerenciador de tarefas com arrasta e solta',
+    description: 'Plataforma visual para gerenciar tarefas com funcionalidade de arrastar e soltar, otimizando a produtividade em equipes.',
     image: taskManager,
     techs: ['HTML', 'CSS', 'JAVASCRIPT', 'VUE', 'LARAVEL', 'MYSQL', 'Vuetify']
   },
   {
     name: 'Plataforma para cursos',
-    description: 'Plataforma EAD',
+    description: 'Plataforma EAD robusta e escalável para aprendizado online, com design responsivo e experiência imersiva.',
     link: 'ignite-lab-react-mu-two.vercel.app/',
     image: plataformaEstudos,
     techs: ['HTML', 'CSS', 'JAVASCRIPT', 'REACTJS', 'TYPESCRIPT']
   },
   {
     name: 'Bate Papo Global',
-    description: 'Bate Papo Global para interagir com outras pessoas',
+    description: 'Aplicação de chat em tempo real que conecta pessoas ao redor do mundo, oferecendo comunicação instantânea e interativa.',
     link: 'bate-papo-global.vercel.app',
     image: batePapoGlobal,
     techs: ['HTML', 'CSS', 'JAVASCRIPT', 'REACTJS', 'TYPESCRIPT', 'STYLED-COMPONENTS', 'FIREBASE'],
   },
   {
     name: 'Clima360',
-    description: 'Confira agora como está a temperatura de qualquer local do mundo!',
+    description: 'Consulta meteorológica global, permitindo aos usuários explorar dados climáticos de qualquer localidade com rapidez e precisão.',
     link: 'clima360.vercel.app/',
     image: informacoesMetereologicas,
     techs: ['HTML', 'CSS', 'JAVASCRIPT', 'VUE'],
   },
   {
     name: 'Landing Page Cabelereiro',
-    description: 'Landing Page para barbearia',
+    description: 'Landing Page elegante e otimizada para salões de beleza, destacando serviços e aumentando conversões de clientes.',
     link: 'https://whitelabel-profissional.vercel.app/',
     image: landingPageCabelos,
     techs: ['HTML', 'CSS', 'JAVASCRIPT', 'REACTJS']
   },
   {
     name: 'iMovi',
-    description: 'Landing Page',
+    description: 'Landing Page desenvolvida para o setor imobiliário, destacando imóveis e serviços de forma visualmente atraente.',
     link: 'igormarines.github.io/LearningBootsTrap/',
     image: mobiliariaLandingPage,
     techs: ['HTML', 'CSS', 'BOOTSTRAP']
   },
   {
     name: 'Api de Filmes',
-    description: 'Consumo de API ROCKETFLIX',
+    description: 'Plataforma para recomendação de filmes integrando a API Rocketflix, com interface leve e dinâmica.',
     link: 'igormarines.github.io/Rocketflix/',
     image: filmeAleatorio,
     techs: ['HTML', 'CSS', 'JAVASCRIPT']
   },
   {
     name: 'To-Do Simples',
-    description: 'Lista de presença simples',
+    description: 'Aplicação minimalista para gerenciamento de lista de tarefas, ideal para controle de presença e produtividade.',
     link: 'react-rocketseat-todo-xdnr.vercel.app/',
     image: listaPresenca,
     techs: ['HTML', 'CSS', 'JAVASCRIPT', 'TYPESCRIPT', 'REACTJS']
   },
   {
     name: 'To-Do Mobile [ PROJETO PRIVADO ]',
-    description: 'Presente de aniversário',
+    description: 'Aplicativo móvel personalizado com funcionalidades de gerenciamento de tarefas e armazenamento local.',
     link: '',
     image: todoMobile,
     techs: ['HTML', 'CSS', 'STYLED-COMPONENTS', 'REACT-NATIVE', '@EXPO/CLI', 'LocalStorage']
   }
 ];
+
 
 const Portfolio = () => {
   const [selectedTech, setSelectedTech] = useState('');
