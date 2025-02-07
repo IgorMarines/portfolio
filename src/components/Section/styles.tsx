@@ -80,7 +80,11 @@ export const ButtonContainer = styled.div`
   gap: 10px;
 `;
 
-export const Button = styled.a`
+interface ButtonProps {
+  $outlined?: boolean;
+}
+
+export const Button = styled.a<ButtonProps>`
   background-color: ${(props) => (props.$outlined ? 'transparent' : '#555')};
   color: ${(props) => (props.$outlined ? '#fff' : '#111')};
   border: ${(props) => (props.$outlined ? '2px solid #555' : 'none')};
