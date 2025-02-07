@@ -9,7 +9,7 @@ import { useMediaQuery } from '@mui/material';
 const App = () => {
   const isMobile = useMediaQuery('(max-width:600px)');
   return (
-    <S.Body style={{background: isMobile ? '#000' : 'linear-gradient(to left, white 50%, black 50%);'}}>
+    <S.Body style={{background: isMobile ? '#000' : '#111'}}>
       <Header/>
       <Section />
       <Footer/>

@@ -45,7 +45,7 @@ export const FilterContainer = styled.div`
 export const SelectedTech = styled.select`
   padding: 10px;
   font-size: 1rem;
-  background-color: #222; /* Fundo escuro */
+  background-color: #4db6ac; /* Fundo escuro */
   color: #e0e0e0;
   border: 1px solid #444; /* Borda escura */
   border-radius: 5px;
@@ -61,7 +61,7 @@ export const CardsContainer = styled.div`
 
 export const Card = styled.div`
   background: #1c1c1c; /* Cinza muito escuro */
-  border: 1px solid #333; /* Borda escura */
+  border: 1px solid #4db6ac; /* Borda escura */
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
   overflow: hidden;
@@ -75,7 +75,7 @@ export const Card = styled.div`
 
   h2 {
     margin: 10px 0;
-    color: #f2f2f2; /* Branco suave */
+    color: #4db6ac; /* Branco suave */
     font-size: 1.5rem;
   }
 
@@ -99,9 +99,14 @@ export const TechList = styled.ul`
   padding: 10px;
   gap: 10px;
 
+
   li {
     font-size: 0.9rem;
     font-weight: bold;
     color: #f2f2f2; /* Branco suave */
+    border: 1px solid #4db6ac; /* Borda escura */
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: #4db6ac; /* Fundo escuro */
   }
 `;

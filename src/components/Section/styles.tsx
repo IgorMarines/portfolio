@@ -14,7 +14,7 @@ export const Border = styled.div`
   border: 2px solid #444;
   border-radius: 12px;
   padding: 20px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 16px #4db6ac;
 `;
 
 export const Container = styled.div`
@@ -58,7 +58,7 @@ export const Role = styled.h2`
 
   a {
     text-decoration: none;
-    color: #aaa;
+    color: #4db6ac;
     border-bottom: 2px solid transparent;
     transition: border-color 0.3s;
 
@@ -85,9 +85,9 @@ interface ButtonProps {
 }
 
 export const Button = styled.a<ButtonProps>`
-  background-color: ${(props) => (props.$outlined ? 'transparent' : '#555')};
+  background-color: ${(props) => (props.$outlined ? 'transparent' : '#4db6ac')};
   color: ${(props) => (props.$outlined ? '#fff' : '#111')};
-  border: ${(props) => (props.$outlined ? '2px solid #555' : 'none')};
+  border: ${(props) => (props.$outlined ? '2px solid #4db6ac' : 'none')};
   padding: 10px 20px;
   border-radius: 8px;
   text-align: center;

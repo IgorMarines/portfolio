@@ -94,7 +94,7 @@ export const DetailsWrapper = styled.div`
 
 export const TechsTitle = styled.h3`
   font-size: 1.5rem;
-  color: #fff;
+  color: #4db6ac;
   margin-bottom: 15px;
 `;
 
@@ -120,8 +120,8 @@ export const Tech = styled.p`
 `;
 
 export const Button = styled.button`
-  background: #61dafb;
-  color: #111;
+  background: #4db6ac;
+  color: #fff;
   border: none;
   padding: 12px 20px;
   font-size: 1.1rem;

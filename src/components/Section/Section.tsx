@@ -1,15 +1,13 @@
 import 'animate.css';
 import * as S from './styles';
-import sukuna from '../../assets/images/sukuna2.jpg';
-import itadori from '../../assets/images/ena2.jpg';
+import sukuna from '../../assets/images/professional_selfie.png';
 import { useMediaQuery } from '@mui/material';
-import { useState } from 'react';
+
 
 import curriculo from '../../assets/downloads/Curriculo.pdf';
 
 const Content = () => {
   const isMobile = useMediaQuery('(max-width:600px)');
-  const [userPhoto, setUserPhoto] = useState(false);
 
   return (
     <S.Body>
@@ -47,8 +45,7 @@ const Content = () => {
 
           <S.Right style={{ display: isMobile ? 'none' : 'flex' }}>
             <S.Image
-              onClick={() => setUserPhoto(!userPhoto)}
-              src={userPhoto ? itadori : sukuna}
+              src={sukuna}
               alt="User"
             />
           </S.Right>

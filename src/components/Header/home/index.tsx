@@ -3,7 +3,7 @@ import Home_Icon from '../../../assets/images/icons/home.svg';
 
 // Variáveis para temas e estilos
 const COLORS = {
-  primary: '#fff',
+  primary: '#4db6ac',
   hover: '#61dafb',
   background: '#000',
 };

@@ -159,12 +159,7 @@ const Portfolio = () => {
               <S.TechList>
                 {project.techs.map((tech, idx) => (
                   <li
-                    key={idx}
-                    style={{
-                      color: tech === 'REACTJS' ? '#61DAFB' :
-                        tech === 'VUE' ? '#42B883' : '#ff6b6b'
-                    }}
-                  >
+                    key={idx}>
                     {tech}
                   </li>
                 ))}
