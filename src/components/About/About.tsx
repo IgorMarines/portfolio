@@ -37,6 +37,17 @@ const About = () => {
                 <S.ExperienceSection className="animate__animated animate__fadeIn animate__delay-3s">
                     <h3>Experiência Profissional</h3>
                     <S.Experience>
+                        <S.CompanyName>Modifique — Remoto (Ribeirão Preto, SP)</S.CompanyName>
+                        <S.Position>Desenvolvedor Full Stack (mar. 2025 - jun. 2025)</S.Position>
+                        <ul>
+                            <li>Criação de interfaces responsivas com <strong>React.js</strong>, <strong>Vue.js</strong> e <strong>EJS</strong>.</li>
+                            <li>Integração de APIs RESTful, construção de fluxos completos de CRUD e autenticação.</li>
+                            <li>Implementação de sistemas administrativos e controle de acesso.</li>
+                            <li>Integração com a <strong>API do Asaas</strong> para pagamentos e cobranças.</li>
+                            <li>Otimização de queries e estruturação de bancos relacionais e cloud (MySQL, PostgreSQL, Supabase).</li>
+                        </ul>
+                    </S.Experience>
+                    <S.Experience>
                         <S.CompanyName>Covenant Technology — São Paulo, SP</S.CompanyName>
                         <S.Position>Desenvolvedor Full Stack (fev. 2024 - set. 2024)</S.Position>
                         <ul>
