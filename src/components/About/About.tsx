@@ -27,9 +27,25 @@ const About = () => {
                         <S.SkillItem color="#61dbfb"><strong>React.js:</strong> Interfaces reativas e dinâmicas</S.SkillItem>
                         <S.SkillItem color="#4fc08d"><strong>Vue.js:</strong> Desenvolvimento de SPAs leves</S.SkillItem>
                         <S.SkillItem color="#3178c6"><strong>TypeScript:</strong> Tipagem avançada para segurança</S.SkillItem>
+                        <S.SkillItem color="#764abc"><strong>Redux / Redux-Sagas:</strong> Gerenciamento de estado</S.SkillItem>
                         <S.SkillItem color="#8892BF"><strong>PHP:</strong> Backend poderoso</S.SkillItem>
                         <S.SkillItem color="#FF2D20"><strong>Laravel:</strong> Framework robusto para PHP</S.SkillItem>
+                        <S.SkillItem color="#092E20"><strong>Django:</strong> Framework web em Python</S.SkillItem>
+                        <S.SkillItem color="#00AD9F"><strong>NestJS:</strong> Backend escalável com Node e TS</S.SkillItem>
+                        <S.SkillItem color="#000000"><strong>Next.js:</strong> SSR e rotas avançadas com React</S.SkillItem>
                         <S.SkillItem color="#00758f"><strong>MySQL:</strong> Banco de dados relacional</S.SkillItem>
+                        <S.SkillItem color="#336791"><strong>PostgreSQL:</strong> Banco de dados avançado</S.SkillItem>
+                        <S.SkillItem color="#3ECF8E"><strong>Supabase:</strong> Backend as a Service</S.SkillItem>
+                        <S.SkillItem color="#FFA611"><strong>Firebase:</strong> Autenticação e banco em tempo real</S.SkillItem>
+                        <S.SkillItem color="#e44d26"><strong>EJS:</strong> Templates server-side em Node</S.SkillItem>
+                        <S.SkillItem color="#1867C0"><strong>Vuetify:</strong> UI framework para Vue</S.SkillItem>
+                        <S.SkillItem color="#4B4B4B"><strong>Inertia.js:</strong> Navegação SPA com Laravel + Vue/React</S.SkillItem>
+                        <S.SkillItem color="#00BFA5"><strong>Bootstrap:</strong> Framework de estilização</S.SkillItem>
+                        <S.SkillItem color="#FF6F00"><strong>MUI:</strong> Componentes modernos para React</S.SkillItem>
+                        <S.SkillItem color="#E10098"><strong>Cypress:</strong> Testes end-to-end</S.SkillItem>
+                        <S.SkillItem color="#000"><strong>Git / GitHub:</strong> Controle de versão</S.SkillItem>
+                        <S.SkillItem color="#F36F21"><strong>RPA:</strong> Automação de processos</S.SkillItem>
+                        <S.SkillItem color="#43B02A"><strong>Clean Architecture:</strong> Código limpo e escalável</S.SkillItem>
                     </S.SkillList>
                 </S.SkillsSection>
 
