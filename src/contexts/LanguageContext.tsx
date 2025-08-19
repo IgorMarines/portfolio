@@ -12,6 +12,7 @@ const translations = {
   pt: {
     // Header
     'nav.home': 'Início',
+    'nav.about': 'Sobre',
     'nav.skills': 'Habilidades',
     'nav.experience': 'Experiência',
     'nav.projects': 'Projetos',
@@ -28,6 +29,11 @@ const translations = {
     'hero.button.contact': '💬 Vamos Conversar',
     'hero.button.cv': '📄 Download CV',
     'hero.scroll': 'Role para baixo',
+    
+    // About
+    'about.title': 'Sobre Mim',
+    'about.subtitle': 'Desenvolvedor Apaixonado por Tecnologia',
+    'about.description': 'Sou um desenvolvedor Full Stack com mais de 3 anos de experiência, especializado em criar soluções digitais inovadoras e eficientes. Minha paixão pela programação me impulsiona a estar sempre aprendendo e aplicando as melhores práticas do mercado.',
     
     // Stats
     'stats.experience': 'Anos de Experiência',
@@ -95,8 +101,8 @@ const translations = {
     
     // Projects
     'projects.title': 'Meus Projetos',
-    'projects.view': 'Ver Projeto',
-    'projects.code': 'Código',
+    'projects.viewProject': 'Ver Projeto',
+    'projects.viewCode': 'Código',
     
     // Contact
     'contact.title': 'Vamos Trabalhar Juntos?',
@@ -122,6 +128,7 @@ const translations = {
   en: {
     // Header
     'nav.home': 'Home',
+    'nav.about': 'About',
     'nav.skills': 'Skills',
     'nav.experience': 'Experience',
     'nav.projects': 'Projects',
@@ -138,6 +145,11 @@ const translations = {
     'hero.button.contact': '💬 Let\'s Talk',
     'hero.button.cv': '📄 Download CV',
     'hero.scroll': 'Scroll down',
+    
+    // About
+    'about.title': 'About Me',
+    'about.subtitle': 'Technology Passionate Developer',
+    'about.description': 'I am a Full Stack developer with over 3 years of experience, specialized in creating innovative and efficient digital solutions. My passion for programming drives me to always be learning and applying the best market practices.',
     
     // Stats
     'stats.experience': 'Years of Experience',
@@ -205,8 +217,8 @@ const translations = {
     
     // Projects
     'projects.title': 'My Projects',
-    'projects.view': 'View Project',
-    'projects.code': 'Code',
+    'projects.viewProject': 'View Project',
+    'projects.viewCode': 'Code',
     
     // Contact
     'contact.title': 'Let\'s Work Together?',

@@ -1,3 +1,4 @@
+import { useLanguage } from '../../contexts/LanguageContext';
 import * as S from './styles';
 import taskManager from '../../assets/images/TaskManager.png';
 import sistemaAdvocacia from '../../assets/images/sistemaAdvocacia.png';
@@ -7,6 +8,7 @@ import informacoesMeteorologicas from '../../assets/images/InformacoesMetereolog
 import landingPageCabelos from '../../assets/images/LandingPageCabelos.png';
 
 const Projects = () => {
+  const { t, language } = useLanguage();
   const projectsData = [
     {
       title: "Task Manager",
@@ -62,7 +64,7 @@ const Projects = () => {
     <S.ProjectsSection id="projetos">
       <S.Container>
         <S.SectionTitle className="animate__animated animate__fadeInUp">
-          Meus Projetos
+          {t('projects.title')}
         </S.SectionTitle>
         
         <S.ProjectsGrid>
@@ -87,7 +89,7 @@ const Projects = () => {
                 <S.ProjectLinks>
                   <S.ProjectLink href={project.liveLink} target="_blank" rel="noopener noreferrer">
                     <S.ProjectIcon>🌐</S.ProjectIcon>
-                    Ver Projeto
+                    {t('projects.viewProject')}
                   </S.ProjectLink>
                   <S.ProjectLink 
                     href={project.codeLink} 
@@ -96,7 +98,7 @@ const Projects = () => {
                     className="outline"
                   >
                     <S.ProjectIcon>💻</S.ProjectIcon>
-                    Código
+                    {t('projects.viewCode')}
                   </S.ProjectLink>
                 </S.ProjectLinks>
               </S.ProjectContent>

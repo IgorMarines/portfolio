@@ -1,7 +1,9 @@
 import { useState } from 'react';
+import { useLanguage } from '../../contexts/LanguageContext';
 import * as S from './styles';
 
 const Contact = () => {
+  const { t, language } = useLanguage();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -22,7 +24,7 @@ const Contact = () => {
     // Implementar lógica de envio do formulário
     console.log('Form submitted:', formData);
     // Aqui você pode integrar com um serviço de email como EmailJS
-    alert('Mensagem enviada! Entraremos em contato em breve.');
+    alert(t('contact.form.success'));
     setFormData({ name: '', email: '', subject: '', message: '' });
   };
 
@@ -57,12 +59,11 @@ const Contact = () => {
     <S.ContactSection id="contato">
       <S.Container>
         <S.SectionTitle className="animate__animated animate__fadeInUp">
-          Vamos Trabalhar Juntos?
+          {t('contact.title')}
         </S.SectionTitle>
         
         <S.SectionSubtitle className="animate__animated animate__fadeInUp">
-          Estou sempre interessado em novos projetos e oportunidades. 
-          Entre em contato comigo através dos canais abaixo ou envie uma mensagem!
+          {t('contact.subtitle')}
         </S.SectionSubtitle>
         
         <S.ContactContent>
@@ -89,58 +90,58 @@ const Contact = () => {
             className="animate__animated animate__fadeInRight"
           >
             <S.FormGroup>
-              <S.FormLabel htmlFor="name">Nome</S.FormLabel>
+              <S.FormLabel htmlFor="name">{t('contact.form.name')}</S.FormLabel>
               <S.FormInput
                 type="text"
                 id="name"
                 name="name"
                 value={formData.name}
                 onChange={handleInputChange}
-                placeholder="Seu nome completo"
+                placeholder={t('contact.form.placeholder.name') as string}
                 required
               />
             </S.FormGroup>
             
             <S.FormGroup>
-              <S.FormLabel htmlFor="email">E-mail</S.FormLabel>
+              <S.FormLabel htmlFor="email">{t('contact.form.email')}</S.FormLabel>
               <S.FormInput
                 type="email"
                 id="email"
                 name="email"
                 value={formData.email}
                 onChange={handleInputChange}
-                placeholder="seu.email@exemplo.com"
+                placeholder={t('contact.form.placeholder.email') as string}
                 required
               />
             </S.FormGroup>
             
             <S.FormGroup>
-              <S.FormLabel htmlFor="subject">Assunto</S.FormLabel>
+              <S.FormLabel htmlFor="subject">{t('contact.form.subject')}</S.FormLabel>
               <S.FormInput
                 type="text"
                 id="subject"
                 name="subject"
                 value={formData.subject}
                 onChange={handleInputChange}
-                placeholder="Assunto da mensagem"
+                placeholder={t('contact.form.placeholder.subject') as string}
                 required
               />
             </S.FormGroup>
             
             <S.FormGroup>
-              <S.FormLabel htmlFor="message">Mensagem</S.FormLabel>
+              <S.FormLabel htmlFor="message">{t('contact.form.message')}</S.FormLabel>
               <S.FormTextarea
                 id="message"
                 name="message"
                 value={formData.message}
                 onChange={handleInputChange}
-                placeholder="Conte-me sobre seu projeto ou ideia..."
+                placeholder={t('contact.form.placeholder.message') as string}
                 required
               />
             </S.FormGroup>
             
             <S.SubmitButton type="submit">
-              Enviar Mensagem
+              {t('contact.form.submit')}
             </S.SubmitButton>
           </S.ContactForm>
         </S.ContactContent>
