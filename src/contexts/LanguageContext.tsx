@@ -124,6 +124,18 @@ const translations = {
     'footer.rights': 'Todos os direitos reservados.',
     'footer.made': 'Feito com',
     'footer.tech': 'usando React & TypeScript',
+    'footer.role': 'Desenvolvedor Full Stack',
+    
+    // Portfolio
+    'portfolio.subtitle': 'Transformando ideias em realidade por meio da paixão pela criação e da busca constante pela excelência.',
+    'portfolio.filter.all': 'Todos',
+    'portfolio.techs.title': 'Tecnologias Usadas:',
+    'portfolio.visit': 'Visitar Projeto',
+    'portfolio.notfound': 'Projeto não encontrado.',
+    'portfolio.noid': 'ID do projeto não fornecido.',
+    
+    // Scroll to top
+    'scroll.top': 'Voltar ao topo',
   },
   en: {
     // Header
@@ -240,6 +252,18 @@ const translations = {
     'footer.rights': 'All rights reserved.',
     'footer.made': 'Made with',
     'footer.tech': 'using React & TypeScript',
+    'footer.role': 'Full Stack Developer',
+    
+    // Portfolio
+    'portfolio.subtitle': 'Turning ideas into reality through passion for creation and constant pursuit of excellence.',
+    'portfolio.filter.all': 'All',
+    'portfolio.techs.title': 'Technologies Used:',
+    'portfolio.visit': 'Visit Project',
+    'portfolio.notfound': 'Project not found.',
+    'portfolio.noid': 'Project ID not provided.',
+    
+    // Scroll to top
+    'scroll.top': 'Back to top',
   }
 };
 

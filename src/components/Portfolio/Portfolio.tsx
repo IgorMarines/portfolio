@@ -4,6 +4,7 @@ import Footer from '../Footer/Footer.tsx';
 import Logotipo from '../Header/home/index.tsx';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import { useLanguage } from '../../contexts/LanguageContext';
 import filmeAleatorio from '../../assets/images/filmeAleatorio.png'
 
 import informacoesMetereologicas from '../../assets/images/InformacoesMetereologicas.png'
@@ -120,7 +121,7 @@ export const portfolio_projects = [
 
 
 const Portfolio = () => {
-
+  const { t } = useLanguage();
   const [selectedTech, setSelectedTech] = useState('');
 
   const filteredProjects = portfolio_projects.filter(project =>
@@ -135,13 +136,13 @@ const Portfolio = () => {
         <S.Header>
           <Logotipo />
           <p>
-            Transformando ideias em realidade por meio da paixão pela criação e da busca constante pela excelência.
+            {t('portfolio.subtitle')}
           </p>
         </S.Header>
 
         <S.FilterContainer>
           <S.SelectedTech value={selectedTech} onChange={(e) => setSelectedTech(e.target.value)}>
-            <option value="">Todos</option>
+            <option value="">{t('portfolio.filter.all')}</option>
             {allTechs.map((tech, index) => (
               <option key={index} value={tech}>{tech}</option>
             ))}

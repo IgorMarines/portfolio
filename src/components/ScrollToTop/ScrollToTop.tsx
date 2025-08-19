@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
 import * as S from './styles';
+import { useLanguage } from '../../contexts/LanguageContext';
 
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const toggleVisibility = () => {
@@ -28,7 +30,7 @@ const ScrollToTop = () => {
     <S.ScrollToTopButton 
       $visible={isVisible} 
       onClick={scrollToTop}
-      aria-label="Voltar ao topo"
+      aria-label={t('scroll.top') as string}
     >
       ⬆️
     </S.ScrollToTopButton>

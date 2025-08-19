@@ -47,6 +47,10 @@ export const LogoText = styled.h1`
   background-clip: text;
   margin: 0;
   line-height: 1;
+  
+  @media (max-width: 768px) {
+    font-size: 1.25rem;
+  }
 `;
 
 export const LogoSubtext = styled.span`
@@ -55,6 +59,10 @@ export const LogoSubtext = styled.span`
   font-weight: 500;
   font-family: var(--font-family-mono);
   letter-spacing: 0.5px;
+  
+  @media (max-width: 768px) {
+    font-size: 0.65rem;
+  }
 `;
 
 export const Navigation = styled.nav`
@@ -62,7 +70,123 @@ export const Navigation = styled.nav`
   gap: var(--spacing-lg);
   
   @media (max-width: 768px) {
-    gap: var(--spacing-md);
+    display: none;
+  }
+`;
+
+export const DesktopNavigation = styled.nav`
+  display: flex;
+  gap: var(--spacing-lg);
+  
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
+export const MobileMenuContainer = styled.div`
+  display: none;
+  align-items: center;
+  gap: var(--spacing-sm);
+  
+  @media (max-width: 768px) {
+    display: flex;
+  }
+`;
+
+export const MobileMenuButton = styled.button<{ $isOpen: boolean }>`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 24px;
+  height: 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+  
+  span {
+    width: 24px;
+    height: 2px;
+    background: var(--color-text-primary);
+    border-radius: 1px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+    
+    &:first-child {
+      transform: ${({ $isOpen }) => $isOpen ? 'rotate(45deg)' : 'rotate(0)'};
+    }
+    
+    &:nth-child(2) {
+      opacity: ${({ $isOpen }) => $isOpen ? '0' : '1'};
+      transform: ${({ $isOpen }) => $isOpen ? 'translateX(20px)' : 'translateX(0)'};
+    }
+    
+    &:nth-child(3) {
+      transform: ${({ $isOpen }) => $isOpen ? 'rotate(-45deg)' : 'rotate(0)'};
+    }
+  }
+`;
+
+export const MobileNavigation = styled.nav<{ $isOpen: boolean }>`
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 280px;
+  background: rgba(15, 15, 35, 0.98);
+  backdrop-filter: blur(20px);
+  border-left: 1px solid var(--color-border);
+  flex-direction: column;
+  padding: 80px var(--spacing-lg) var(--spacing-lg);
+  transform: ${({ $isOpen }) => $isOpen ? 'translateX(0)' : 'translateX(100%)'};
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+  
+  @media (max-width: 768px) {
+    display: flex;
+  }
+`;
+
+export const MobileNavLink = styled.a`
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: var(--spacing-md) 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all var(--transition-normal);
+  
+  &:hover {
+    color: var(--color-primary);
+    transform: translateX(8px);
+  }
+  
+  &:last-child {
+    border-bottom: none;
+  }
+`;
+
+export const MobileOverlay = styled.div<{ $isOpen: boolean }>`
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: ${({ $isOpen }) => $isOpen ? '1' : '0'};
+  visibility: ${({ $isOpen }) => $isOpen ? 'visible' : 'hidden'};
+  transition: all 0.3s ease-in-out;
+  z-index: 999;
+  
+  @media (max-width: 768px) {
+    display: block;
   }
 `;
 

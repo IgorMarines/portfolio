@@ -2,18 +2,20 @@ import { useParams } from 'react-router-dom';
 import { portfolio_projects } from '../Portfolio/Portfolio';
 import * as S from './styles';
 import Home from '../Header/home';
+import { useLanguage } from '../../contexts/LanguageContext';
 
 const PortfolioProject = () => {
   const { id } = useParams();
+  const { t } = useLanguage();
 
   if (id === undefined) {
-    return <S.Container>ID do projeto não fornecido.</S.Container>;
+    return <S.Container>{t('portfolio.noid')}</S.Container>;
   }
 
   const projectId = parseInt(id, 10);
 
   if (isNaN(projectId) || projectId < 0 || projectId >= portfolio_projects.length) {
-    return <S.Container>Projeto não encontrado.</S.Container>;
+    return <S.Container>{t('portfolio.notfound')}</S.Container>;
   }
 
   const selectedProject = portfolio_projects[projectId];
@@ -32,7 +34,7 @@ const PortfolioProject = () => {
         </S.ImageWrapper>
 
         <S.DetailsWrapper>
-          <S.TechsTitle>Tecnologias Usadas:</S.TechsTitle>
+          <S.TechsTitle>{t('portfolio.techs.title')}</S.TechsTitle>
           <S.Techs>
             {selectedProject.techs.map((tech, index) => (
               <S.Tech key={index}>{tech}</S.Tech>
@@ -40,7 +42,7 @@ const PortfolioProject = () => {
           </S.Techs>
 
           <a href={link} target='_blank' rel='noopener noreferrer'>
-            <S.Button>Visitar Projeto</S.Button>
+            <S.Button>{t('portfolio.visit')}</S.Button>
           </a>
         </S.DetailsWrapper>
       </S.Main>
