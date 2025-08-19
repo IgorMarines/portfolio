@@ -1,102 +1,83 @@
-import Home from '../Header/home';
+import { useLanguage } from '../../contexts/LanguageContext';
 import * as S from './styles';
-import 'animate.css';
 
 const About = () => {
-    return (
-        <S.Body>
-            <S.Container>
-                <Home />
-                <S.SectionTitle className="animate__animated animate__fadeIn animate__delay-1s">
-                    Sobre Mim
-                </S.SectionTitle>
+  const { t, language } = useLanguage();
 
-                <S.IntroText className="animate__animated animate__fadeIn animate__delay-2s">
-                    Olá! Sou o Igor, desenvolvedor Full Stack com mais de dois anos de experiência em tecnologias
-                    front-end e back-end. Tenho afinidade com React.js e Vue.js, e habilidades em PHP e Laravel.
-                    Gosto de trabalhar em projetos que trazem soluções práticas e impactantes.
-                </S.IntroText>
+  const stats = [
+    {
+      number: "3+",
+      label: language === 'pt' ? 'Anos de Experiência' : 'Years of Experience'
+    },
+    {
+      number: "20+",
+      label: language === 'pt' ? 'Projetos Concluídos' : 'Completed Projects'
+    },
+    {
+      number: "10+",
+      label: language === 'pt' ? 'Tecnologias' : 'Technologies'
+    },
+    {
+      number: "100%",
+      label: language === 'pt' ? 'Dedicação' : 'Dedication'
+    }
+  ];
 
-                {/* Seção de Competências */}
-                <S.SkillsSection className="animate__animated animate__fadeIn animate__delay-2s">
-                    <h3>Principais Competências</h3>
-                    <S.SkillList>
-                        <S.SkillItem color="#f16529"><strong>HTML:</strong> Estruturação de páginas web</S.SkillItem>
-                        <S.SkillItem color="#264de4"><strong>CSS:</strong> Estilização de interfaces</S.SkillItem>
-                        <S.SkillItem color="#f7df1e"><strong>JavaScript:</strong> Funcionalidades interativas</S.SkillItem>
-                        <S.SkillItem color="#61dbfb"><strong>React.js:</strong> Interfaces reativas e dinâmicas</S.SkillItem>
-                        <S.SkillItem color="#4fc08d"><strong>Vue.js:</strong> Desenvolvimento de SPAs leves</S.SkillItem>
-                        <S.SkillItem color="#3178c6"><strong>TypeScript:</strong> Tipagem avançada para segurança</S.SkillItem>
-                        <S.SkillItem color="#764abc"><strong>Redux / Redux-Sagas:</strong> Gerenciamento de estado</S.SkillItem>
-                        <S.SkillItem color="#8892BF"><strong>PHP:</strong> Backend poderoso</S.SkillItem>
-                        <S.SkillItem color="#FF2D20"><strong>Laravel:</strong> Framework robusto para PHP</S.SkillItem>
-                        <S.SkillItem color="#092E20"><strong>Django:</strong> Framework web em Python</S.SkillItem>
-                        <S.SkillItem color="#00AD9F"><strong>NestJS:</strong> Backend escalável com Node e TS</S.SkillItem>
-                        <S.SkillItem color="#000000"><strong>Next.js:</strong> SSR e rotas avançadas com React</S.SkillItem>
-                        <S.SkillItem color="#00758f"><strong>MySQL:</strong> Banco de dados relacional</S.SkillItem>
-                        <S.SkillItem color="#336791"><strong>PostgreSQL:</strong> Banco de dados avançado</S.SkillItem>
-                        <S.SkillItem color="#3ECF8E"><strong>Supabase:</strong> Backend as a Service</S.SkillItem>
-                        <S.SkillItem color="#FFA611"><strong>Firebase:</strong> Autenticação e banco em tempo real</S.SkillItem>
-                        <S.SkillItem color="#e44d26"><strong>EJS:</strong> Templates server-side em Node</S.SkillItem>
-                        <S.SkillItem color="#1867C0"><strong>Vuetify:</strong> UI framework para Vue</S.SkillItem>
-                        <S.SkillItem color="#4B4B4B"><strong>Inertia.js:</strong> Navegação SPA com Laravel + Vue/React</S.SkillItem>
-                        <S.SkillItem color="#00BFA5"><strong>Bootstrap:</strong> Framework de estilização</S.SkillItem>
-                        <S.SkillItem color="#FF6F00"><strong>MUI:</strong> Componentes modernos para React</S.SkillItem>
-                        <S.SkillItem color="#E10098"><strong>Cypress:</strong> Testes end-to-end</S.SkillItem>
-                        <S.SkillItem color="#000"><strong>Git / GitHub:</strong> Controle de versão</S.SkillItem>
-                        <S.SkillItem color="#F36F21"><strong>RPA:</strong> Automação de processos</S.SkillItem>
-                        <S.SkillItem color="#43B02A"><strong>Clean Architecture:</strong> Código limpo e escalável</S.SkillItem>
-                    </S.SkillList>
-                </S.SkillsSection>
+  const highlights = language === 'pt' ? [
+    'Desenvolvedor Full Stack com foco em React e Node.js',
+    'Experiência em desenvolvimento de APIs RESTful e sistemas robustos',
+    'Conhecimento sólido em bancos de dados SQL e NoSQL',
+    'Implementação de soluções escaláveis e otimizadas',
+    'Integração com sistemas de pagamento e APIs externas',
+    'Metodologias ágeis e trabalho em equipe'
+  ] : [
+    'Full Stack Developer focused on React and Node.js',
+    'Experience in RESTful API development and robust systems',
+    'Solid knowledge in SQL and NoSQL databases',
+    'Implementation of scalable and optimized solutions',
+    'Integration with payment systems and external APIs',
+    'Agile methodologies and team collaboration'
+  ];
 
-                {/* Seção de Experiência Profissional */}
-                <S.ExperienceSection className="animate__animated animate__fadeIn animate__delay-3s">
-                    <h3>Experiência Profissional</h3>
-                    <S.Experience>
-                        <S.CompanyName>Modifique — Remoto (Ribeirão Preto, SP)</S.CompanyName>
-                        <S.Position>Desenvolvedor Full Stack (mar. 2025 - jun. 2025)</S.Position>
-                        <ul>
-                            <li>Criação de interfaces responsivas com <strong>React.js</strong>, <strong>Vue.js</strong> e <strong>EJS</strong>.</li>
-                            <li>Integração de APIs RESTful, construção de fluxos completos de CRUD e autenticação.</li>
-                            <li>Implementação de sistemas administrativos e controle de acesso.</li>
-                            <li>Integração com a <strong>API do Asaas</strong> para pagamentos e cobranças.</li>
-                            <li>Otimização de queries e estruturação de bancos relacionais e cloud (MySQL, PostgreSQL, Supabase).</li>
-                        </ul>
-                    </S.Experience>
-                    <S.Experience>
-                        <S.CompanyName>Covenant Technology — São Paulo, SP</S.CompanyName>
-                        <S.Position>Desenvolvedor Full Stack (fev. 2024 - set. 2024)</S.Position>
-                        <ul>
-                            <li>Desenvolvimento de aplicações web com Vue.js no front-end e Laravel no back-end.</li>
-                            <li>Implementação de CRUDs e automação de processos com RPA.</li>
-                            <li>Colaboração com equipes usando Clean Architecture para escalabilidade e manutenção.</li>
-                        </ul>
-                    </S.Experience>
-                    <S.Experience>
-                        <S.CompanyName>Quivon — São Paulo, SP</S.CompanyName>
-                        <S.Position>Desenvolvedor Web Front End (jun. 2022 - jul. 2023)</S.Position>
-                        <ul>
-                            <li>Criação de interfaces com React.js, TypeScript, Redux, e Styled-Components.</li>
-                            <li>Trabalho direto com design para traduções funcionais e acessíveis.</li>
-                            <li>Implementação de testes unitários para garantir qualidade e estabilidade.</li>
-                        </ul>
-                    </S.Experience>
-                </S.ExperienceSection>
-
-                {/* Seção de Contato */}
-                <S.ContactSection className="animate__animated animate__fadeIn animate__delay-4s">
-                    <h3>Contato</h3>
-                    <p>Email: igor.marines25@gmail.com</p>
-                    <p>Telefone: (11) 95434-8405</p>
-                    <S.Links>
-                        <a href="https://www.linkedin.com/in/igormarines" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                        <a href="https://github.com/igormarines" target="_blank" rel="noopener noreferrer">GitHub</a>
-                        <a href="https://portfolio-igormarines.vercel.app" target="_blank" rel="noopener noreferrer">Portfólio</a>
-                    </S.Links>
-                </S.ContactSection>
-            </S.Container>
-        </S.Body>
-    );
+  return (
+    <S.AboutSection id="sobre">
+      <S.Container>
+        <S.SectionTitle className="animate__animated animate__fadeInUp">
+          {t('about.title')}
+        </S.SectionTitle>
+        
+        <S.Content>
+          <S.ImageContainer className="animate__animated animate__fadeInLeft">
+            <S.ProfileImage 
+              src="/src/assets/images/professional_selfie.png" 
+              alt="Igor Marines"
+            />
+          </S.ImageContainer>
+          
+          <S.TextContent className="animate__animated animate__fadeInRight">
+            <S.Subtitle>{t('about.subtitle')}</S.Subtitle>
+            <S.Description>{t('about.description')}</S.Description>
+            
+            <S.HighlightList>
+              {highlights.map((highlight, index) => (
+                <S.HighlightItem key={index}>{highlight}</S.HighlightItem>
+              ))}
+            </S.HighlightList>
+          </S.TextContent>
+        </S.Content>
+        
+        <S.StatsContainer className="animate__animated animate__fadeInUp" 
+                         style={{ animationDelay: '0.3s' }}>
+          {stats.map((stat, index) => (
+            <S.StatCard key={index}>
+              <S.StatNumber>{stat.number}</S.StatNumber>
+              <S.StatLabel>{stat.label}</S.StatLabel>
+            </S.StatCard>
+          ))}
+        </S.StatsContainer>
+      </S.Container>
+    </S.AboutSection>
+  );
 };
 
 export default About;
