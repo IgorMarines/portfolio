@@ -30,6 +30,10 @@ export const Container = styled.div`
   @media (max-width: 768px) {
     padding: 0 var(--spacing-md);
   }
+  
+  @media (max-width: 480px) {
+    padding: 0 var(--spacing-sm);
+  }
 `;
 
 export const Logo = styled.div`
@@ -135,20 +139,22 @@ export const MobileNavigation = styled.nav<{ $isOpen: boolean }>`
   top: 0;
   right: 0;
   height: 100vh;
-  width: 280px;
+  width: 80%; /* mais responsivo que fixar 280px */
+  max-width: 320px;
   background: rgba(15, 15, 35, 0.98);
   backdrop-filter: blur(20px);
   border-left: 1px solid var(--color-border);
   flex-direction: column;
   padding: 80px var(--spacing-lg) var(--spacing-lg);
-  transform: ${({ $isOpen }) => $isOpen ? 'translateX(0)' : 'translateX(100%)'};
+  transform: ${({ $isOpen }) => ($isOpen ? 'translateX(0)' : 'translateX(100%)')};
   transition: transform 0.3s ease-in-out;
-  z-index: 1000;
-  
+  z-index: 1100; /* mais alto que overlay */
+
   @media (max-width: 768px) {
     display: flex;
   }
 `;
+
 
 export const MobileNavLink = styled.a`
   display: flex;
@@ -157,7 +163,7 @@ export const MobileNavLink = styled.a`
   color: var(--color-text-secondary);
   text-decoration: none;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1.2rem; /* aumentei */
   padding: var(--spacing-md) 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   transition: all var(--transition-normal);
@@ -179,17 +185,16 @@ export const MobileOverlay = styled.div<{ $isOpen: boolean }>`
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  opacity: ${({ $isOpen }) => $isOpen ? '1' : '0'};
-  visibility: ${({ $isOpen }) => $isOpen ? 'visible' : 'hidden'};
+  background: rgba(0, 0, 0, 0.55);
+  opacity: ${({ $isOpen }) => ($isOpen ? '1' : '0')};
+  visibility: ${({ $isOpen }) => ($isOpen ? 'visible' : 'hidden')};
   transition: all 0.3s ease-in-out;
-  z-index: 999;
-  
+  z-index: 1099; /* sempre abaixo do menu, acima do resto */
+
   @media (max-width: 768px) {
     display: block;
   }
 `;
-
 export const NavLink = styled.a`
   display: flex;
   align-items: center;
