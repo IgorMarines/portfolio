@@ -134,6 +134,9 @@ const translations = {
     'portfolio.notfound': 'Projeto não encontrado.',
     'portfolio.noid': 'ID do projeto não fornecido.',
     
+    // Scroll
+    'scroll.top': 'Voltar ao topo',
+    
     // Scroll to top
     'scroll.top': 'Voltar ao topo',
   },
@@ -261,6 +264,9 @@ const translations = {
     'portfolio.visit': 'Visit Project',
     'portfolio.notfound': 'Project not found.',
     'portfolio.noid': 'Project ID not provided.',
+    
+    // Scroll
+    'scroll.top': 'Back to top',
     
     // Scroll to top
     'scroll.top': 'Back to top',
