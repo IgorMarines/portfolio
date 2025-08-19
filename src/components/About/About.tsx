@@ -1,5 +1,6 @@
 import { useLanguage } from '../../contexts/LanguageContext';
 import * as S from './styles';
+import fotoProfissional from '../../assets/images/professional_selfie.png';
 
 const About = () => {
   const { t, language } = useLanguage();
@@ -49,7 +50,7 @@ const About = () => {
         <S.Content>
           <S.ImageContainer className="animate__animated animate__fadeInLeft">
             <S.ProfileImage 
-              src="/src/assets/images/professional_selfie.png" 
+              src={fotoProfissional}
               alt="Igor Marines"
             />
           </S.ImageContainer>

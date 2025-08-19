@@ -2,7 +2,7 @@
 import './App.css';
 import * as S from './styles/Background';
 import Section from './components/Section/Section';
-import Header from './components/Header';
+import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import About from './components/About';
 import Skills from './components/Skills/Skills';
