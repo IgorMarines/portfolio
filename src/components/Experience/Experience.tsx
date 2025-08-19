@@ -181,7 +181,7 @@ const Experience = () => {
                         {category}:
                       </strong>
                       <S.TechList style={{ marginTop: 'var(--spacing-xs)' }}>
-                        {techs.map((tech) => (
+                        {techs.map((tech: any) => (
                           <S.TechTag key={tech}>{tech}</S.TechTag>
                         ))}
                       </S.TechList>
