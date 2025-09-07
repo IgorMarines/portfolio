@@ -5,7 +5,7 @@ type Language = 'pt' | 'en';
 interface LanguageContextType {
   language: Language;
   setLanguage: (lang: Language) => void;
-  t: (key: string) => string | string[];
+  t: (key: string) => string | string[] | any;
 }
 
 const translations = {
@@ -34,6 +34,15 @@ const translations = {
     'about.title': 'Sobre Mim',
     'about.subtitle': 'Desenvolvedor Apaixonado por Tecnologia',
     'about.description': 'Sou um desenvolvedor Full Stack com mais de 3 anos de experiência, especializado em criar soluções digitais inovadoras e eficientes. Minha paixão pela programação me impulsiona a estar sempre aprendendo e aplicando as melhores práticas do mercado.',
+    'about.technologies': 'Tecnologias',
+    'about.highlights': [
+      'Desenvolvedor Full Stack com foco em React e Node.js',
+      'Experiência em desenvolvimento de APIs RESTful e sistemas robustos',
+      'Conhecimento sólido em bancos de dados SQL e NoSQL',
+      'Implementação de soluções escaláveis e otimizadas',
+      'Integração com sistemas de pagamento e APIs externas',
+      'Metodologias ágeis e trabalho em equipe'
+    ],
     
     // Stats
     'stats.experience': 'Anos de Experiência',
@@ -46,6 +55,10 @@ const translations = {
     'skills.backend': 'Backend',
     'skills.tools': 'Ferramentas',
     'skills.soft': 'Soft Skills',
+    'skills.frontend.list': ["React", "TypeScript", "JavaScript", "HTML5", "CSS3", "Styled Components", "Material-UI", "Design Responsivo", "Git"],
+    'skills.backend.list': ["Node.js", "Express", "APIs RESTful", "GraphQL", "MongoDB", "PostgreSQL", "MySQL", "Autenticação", "JWT"],
+    'skills.tools.list': ["VS Code", "Git", "GitHub", "npm", "Webpack", "Vite", "Docker", "Postman", "Figma"],
+    'skills.soft.list': ["Resolução de Problemas", "Trabalho em Equipe", "Comunicação", "Aprendizado Contínuo", "Criatividade", "Pensamento Analítico"],
     
     // Experience
     'experience.title': 'Experiência Profissional',
@@ -103,6 +116,38 @@ const translations = {
     'projects.title': 'Meus Projetos',
     'projects.viewProject': 'Ver Projeto',
     'projects.viewCode': 'Código',
+    'projects.data': [
+      {
+        title: "Task Manager",
+        description: "Sistema completo de gerenciamento de tarefas com interface moderna e responsiva. Inclui funcionalidades de CRUD, filtros avançados e dashboard interativo.",
+        technologies: ["React", "TypeScript", "Styled Components", "Local Storage"]
+      },
+      {
+        title: "Sistema de Advocacia",
+        description: "Plataforma profissional para escritórios de advocacia com gestão de clientes, casos jurídicos e documentos. Interface intuitiva e segura.",
+        technologies: ["React", "Node.js", "MySQL", "JWT", "Material-UI"]
+      },
+      {
+        title: "Plataforma de Estudos",
+        description: "Sistema educacional completo com cursos, aulas interativas e acompanhamento de progresso. Desenvolvido com foco na experiência do usuário.",
+        technologies: ["React", "TypeScript", "Firebase", "Styled Components"]
+      },
+      {
+        title: "Filme Aleatório",
+        description: "Aplicação que sugere filmes aleatórios baseados nas preferências do usuário. Integração com APIs externas e design responsivo.",
+        technologies: ["React", "API REST", "CSS3", "JavaScript"]
+      },
+      {
+        title: "Informações Meteorológicas",
+        description: "App de clima em tempo real com previsões detalhadas, mapas interativos e notificações personalizadas. Interface elegante e intuitiva.",
+        technologies: ["React", "Weather API", "Geolocation", "Chart.js"]
+      },
+      {
+        title: "Landing Page - Cabelos",
+        description: "Landing page moderna para salão de beleza especializado em cuidados capilares. Design atrativo com animações e otimizada para conversões.",
+        technologies: ["HTML5", "CSS3", "JavaScript", "GSAP"]
+      }
+    ],
     
     // Contact
     'contact.title': 'Vamos Trabalhar Juntos?',
@@ -112,6 +157,9 @@ const translations = {
     'contact.form.subject': 'Assunto',
     'contact.form.message': 'Mensagem',
     'contact.form.send': 'Enviar Mensagem',
+    'contact.form.submit': 'Enviar',
+    'contact.form.success': 'Redirecionando para o WhatsApp...',
+    'contact.form.fillFields': 'Por favor, preencha todos os campos.',
     'contact.form.placeholder.name': 'Seu nome completo',
     'contact.form.placeholder.email': 'igor.marines25@gmail.com',
     'contact.form.placeholder.subject': 'Assunto da mensagem',
@@ -162,6 +210,15 @@ const translations = {
     'about.title': 'About Me',
     'about.subtitle': 'Technology Passionate Developer',
     'about.description': 'I am a Full Stack developer with over 3 years of experience, specialized in creating innovative and efficient digital solutions. My passion for programming drives me to always be learning and applying the best market practices.',
+    'about.technologies': 'Technologies',
+    'about.highlights': [
+      'Full Stack Developer focused on React and Node.js',
+      'Experience in RESTful API development and robust systems',
+      'Solid knowledge in SQL and NoSQL databases',
+      'Implementation of scalable and optimized solutions',
+      'Integration with payment systems and external APIs',
+      'Agile methodologies and team collaboration'
+    ],
     
     // Stats
     'stats.experience': 'Years of Experience',
@@ -174,6 +231,10 @@ const translations = {
     'skills.backend': 'Backend',
     'skills.tools': 'Tools',
     'skills.soft': 'Soft Skills',
+    'skills.frontend.list': ["React", "TypeScript", "JavaScript", "HTML5", "CSS3", "Styled Components", "Material-UI", "Responsive Design", "Git"],
+    'skills.backend.list': ["Node.js", "Express", "RESTful APIs", "GraphQL", "MongoDB", "PostgreSQL", "MySQL", "Authentication", "JWT"],
+    'skills.tools.list': ["VS Code", "Git", "GitHub", "npm", "Webpack", "Vite", "Docker", "Postman", "Figma"],
+    'skills.soft.list': ["Problem Solving", "Teamwork", "Communication", "Continuous Learning", "Creativity", "Analytical Thinking"],
     
     // Experience
     'experience.title': 'Professional Experience',
@@ -231,6 +292,38 @@ const translations = {
     'projects.title': 'My Projects',
     'projects.viewProject': 'View Project',
     'projects.viewCode': 'Code',
+    'projects.data': [
+      {
+        title: "Task Manager",
+        description: "Complete task management system with modern and responsive interface. Includes CRUD functionality, advanced filters and interactive dashboard.",
+        technologies: ["React", "TypeScript", "Styled Components", "Local Storage"]
+      },
+      {
+        title: "Law System",
+        description: "Professional platform for law firms with client management, legal cases and documents. Intuitive and secure interface.",
+        technologies: ["React", "Node.js", "MySQL", "JWT", "Material-UI"]
+      },
+      {
+        title: "Study Platform",
+        description: "Complete educational system with courses, interactive classes and progress tracking. Developed with focus on user experience.",
+        technologies: ["React", "TypeScript", "Firebase", "Styled Components"]
+      },
+      {
+        title: "Random Movie",
+        description: "Application that suggests random movies based on user preferences. Integration with external APIs and responsive design.",
+        technologies: ["React", "REST API", "CSS3", "JavaScript"]
+      },
+      {
+        title: "Weather Information",
+        description: "Real-time weather app with detailed forecasts, interactive maps and personalized notifications. Elegant and intuitive interface.",
+        technologies: ["React", "Weather API", "Geolocation", "Chart.js"]
+      },
+      {
+        title: "Landing Page - Hair",
+        description: "Modern landing page for beauty salon specialized in hair care. Attractive design with animations and optimized for conversions.",
+        technologies: ["HTML5", "CSS3", "JavaScript", "GSAP"]
+      }
+    ],
     
     // Contact
     'contact.title': 'Let\'s Work Together?',
@@ -240,6 +333,9 @@ const translations = {
     'contact.form.subject': 'Subject',
     'contact.form.message': 'Message',
     'contact.form.send': 'Send Message',
+    'contact.form.submit': 'Send',
+    'contact.form.success': 'Redirecting to WhatsApp...',
+    'contact.form.fillFields': 'Please fill in all fields.',
     'contact.form.placeholder.name': 'Your full name',
     'contact.form.placeholder.email': 'igor.marines25@gmail.com',
     'contact.form.placeholder.subject': 'Message subject',
@@ -271,7 +367,7 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   const [language, setLanguage] = useState<Language>('pt');
 
-  const t = (key: string): string | string[] => {
+  const t = (key: string): string | string[] | any => {
     const value = translations[language][key as keyof typeof translations['pt']];
     return value || key;
   };

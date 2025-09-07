@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { useLanguage } from '../../../contexts/LanguageContext';
 import Home_Icon from '../../../assets/images/icons/home.svg';
 
 // Variáveis para temas e estilos
@@ -53,10 +54,12 @@ const HomeText = styled.span`
 `;
 
 const Home = () => {
+  const { t } = useLanguage();
+  
   return (
     <HomeLink href="/">
       <HomeIcon src={Home_Icon} alt="Ícone Home" />
-      <HomeText>Home</HomeText>
+      <HomeText>{t('nav.home')}</HomeText>
     </HomeLink>
   );
 };

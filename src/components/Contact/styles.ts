@@ -174,8 +174,8 @@ export const FormTextarea = styled.textarea`
 `;
 
 export const SubmitButton = styled.button`
-  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
-  color: var(--color-text-primary);
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  color: white;
   border: none;
   padding: var(--spacing-md) var(--spacing-xl);
   border-radius: var(--radius-lg);
@@ -185,6 +185,10 @@ export const SubmitButton = styled.button`
   transition: all var(--transition-normal);
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 
   &::before {
     content: '';
@@ -199,7 +203,8 @@ export const SubmitButton = styled.button`
 
   &:hover {
     transform: translateY(-2px);
-    box-shadow: var(--shadow-lg);
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+    background: linear-gradient(135deg, #128C7E, #075E54);
     
     &::before {
       left: 100%;

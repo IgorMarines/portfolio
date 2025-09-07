@@ -8,37 +8,23 @@ const About = () => {
   const stats = [
     {
       number: "3+",
-      label: language === 'pt' ? 'Anos de Experiência' : 'Years of Experience'
+      label: t('stats.experience')
     },
     {
-      number: "20+",
-      label: language === 'pt' ? 'Projetos Concluídos' : 'Completed Projects'
+      number: "20+", 
+      label: t('stats.projects')
     },
     {
       number: "10+",
-      label: language === 'pt' ? 'Tecnologias' : 'Technologies'
+      label: t('about.technologies')
     },
     {
       number: "100%",
-      label: language === 'pt' ? 'Dedicação' : 'Dedication'
+      label: t('stats.dedication')
     }
   ];
 
-  const highlights = language === 'pt' ? [
-    'Desenvolvedor Full Stack com foco em React e Node.js',
-    'Experiência em desenvolvimento de APIs RESTful e sistemas robustos',
-    'Conhecimento sólido em bancos de dados SQL e NoSQL',
-    'Implementação de soluções escaláveis e otimizadas',
-    'Integração com sistemas de pagamento e APIs externas',
-    'Metodologias ágeis e trabalho em equipe'
-  ] : [
-    'Full Stack Developer focused on React and Node.js',
-    'Experience in RESTful API development and robust systems',
-    'Solid knowledge in SQL and NoSQL databases',
-    'Implementation of scalable and optimized solutions',
-    'Integration with payment systems and external APIs',
-    'Agile methodologies and team collaboration'
-  ];
+  const highlights = t('about.highlights') as string[];
 
   return (
     <S.AboutSection id="sobre">

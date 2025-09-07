@@ -21,11 +21,42 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Implementar lógica de envio do formulário
-    console.log('Form submitted:', formData);
-    // Aqui você pode integrar com um serviço de email como EmailJS
-    alert(t('contact.form.success'));
+    
+    // Validar campos
+    if (!formData.name || !formData.email || !formData.subject || !formData.message) {
+      alert(t('contact.form.fillFields') || 'Por favor, preencha todos os campos.');
+      return;
+    }
+    
+    // Montar mensagem para WhatsApp
+    const whatsappMessage = `Olá! Meu nome é ${formData.name}.
+
+📧 Email: ${formData.email}
+📋 Assunto: ${formData.subject}
+
+💬 Mensagem:
+${formData.message}
+
+---
+Enviado através do portfólio`;
+    
+    // Codificar mensagem para URL
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+    
+    // Número do WhatsApp (sem espaços, hífens ou caracteres especiais)
+    const phoneNumber = '5511954348405';
+    
+    // Construir URL do WhatsApp
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+    
+    // Abrir WhatsApp
+    window.open(whatsappURL, '_blank');
+    
+    // Limpar formulário após envio
     setFormData({ name: '', email: '', subject: '', message: '' });
+    
+    // Mostrar mensagem de sucesso
+    alert(t('contact.form.success') || 'Redirecionando para o WhatsApp...');
   };
 
   const contactInfo = [
@@ -141,7 +172,7 @@ const Contact = () => {
             </S.FormGroup>
             
             <S.SubmitButton type="submit">
-              {t('contact.form.submit')}
+              📱 {t('contact.form.submit')} via WhatsApp
             </S.SubmitButton>
           </S.ContactForm>
         </S.ContactContent>

@@ -4,47 +4,26 @@ import * as S from './styles';
 const Skills = () => {
   const { t, language } = useLanguage();
 
-  const skillsData = language === 'pt' ? [
+  const skillsData = [
     {
-      category: "Frontend",
+      category: t('skills.frontend'),
       icon: "🎨",
-      skills: ["React", "TypeScript", "JavaScript", "HTML5", "CSS3", "Styled Components", "Material-UI", "Design Responsivo", "Git"]
+      skills: t('skills.frontend.list') as string[]
     },
     {
-      category: "Backend",
+      category: t('skills.backend'),
       icon: "⚙️",
-      skills: ["Node.js", "Express", "APIs RESTful", "GraphQL", "MongoDB", "PostgreSQL", "MySQL", "Autenticação", "JWT"]
+      skills: t('skills.backend.list') as string[]
     },
     {
-      category: "Ferramentas",
+      category: t('skills.tools'),
       icon: "🛠️",
-      skills: ["VS Code", "Git", "GitHub", "npm", "Webpack", "Vite", "Docker", "Postman", "Figma"]
+      skills: t('skills.tools.list') as string[]
     },
     {
-      category: "Soft Skills",
+      category: t('skills.soft'),
       icon: "🧠",
-      skills: ["Resolução de Problemas", "Trabalho em Equipe", "Comunicação", "Aprendizado Contínuo", "Criatividade", "Pensamento Analítico"]
-    }
-  ] : [
-    {
-      category: "Frontend",
-      icon: "🎨",
-      skills: ["React", "TypeScript", "JavaScript", "HTML5", "CSS3", "Styled Components", "Material-UI", "Responsive Design", "Git"]
-    },
-    {
-      category: "Backend",
-      icon: "⚙️",
-      skills: ["Node.js", "Express", "RESTful APIs", "GraphQL", "MongoDB", "PostgreSQL", "MySQL", "Authentication", "JWT"]
-    },
-    {
-      category: "Tools",
-      icon: "🛠️",
-      skills: ["VS Code", "Git", "GitHub", "npm", "Webpack", "Vite", "Docker", "Postman", "Figma"]
-    },
-    {
-      category: "Soft Skills",
-      icon: "🧠",
-      skills: ["Problem Solving", "Teamwork", "Communication", "Continuous Learning", "Creativity", "Analytical Thinking"]
+      skills: t('skills.soft.list') as string[]
     }
   ];
 
