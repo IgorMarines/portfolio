@@ -85,7 +85,7 @@ const Content = () => {
               <S.SocialLink href="https://github.com/IgorMarines" target="_blank">
                 <S.SocialIcon>🐙</S.SocialIcon>
               </S.SocialLink>
-              <S.SocialLink href="https://linkedin.com/in/igor-marines" target="_blank">
+              <S.SocialLink href="https://linkedin.com/in/igormarines" target="_blank">
                 <S.SocialIcon>💼</S.SocialIcon>
               </S.SocialLink>
               <S.SocialLink href="mailto:igor@example.com">

@@ -35,7 +35,7 @@ const Footer = () => {
                   <S.SocialIcon>🐙</S.SocialIcon>
                   GitHub
                 </S.SocialLink>
-                <S.SocialLink href="https://linkedin.com/in/igor-marines" target="_blank" rel="noopener noreferrer">
+                <S.SocialLink href="https://linkedin.com/in/igormarines" target="_blank" rel="noopener noreferrer">
                   <S.SocialIcon>💼</S.SocialIcon>
                   LinkedIn
                 </S.SocialLink>

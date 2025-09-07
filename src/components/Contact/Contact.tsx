@@ -63,8 +63,8 @@ Enviado através do portfólio`;
     {
       icon: '📧',
       label: 'E-mail',
-      value: 'igor.marines@email.com',
-      href: 'mailto:igor.marines@email.com'
+      value: 'igor.marines25@gmail.com',
+      href: 'mailto:igor.marines25@gmail.com'
     },
     {
       icon: '📱',
@@ -75,8 +75,8 @@ Enviado através do portfólio`;
     {
       icon: '💼',
       label: 'LinkedIn',
-      value: 'linkedin.com/in/igor-marines',
-      href: 'https://linkedin.com/in/igor-marines'
+      value: 'linkedin.com/in/igormarines',
+      href: 'https://linkedin.com/in/igormarines'
     },
     {
       icon: '🐙',
